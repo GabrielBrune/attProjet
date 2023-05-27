@@ -6,9 +6,9 @@ function Cabecalho(){
         <div>
             <div>
                 <Menu 
-                item1={'Contatos'}
-                item2={'Sobre'}
-                item3={'Recenbendo'} />
+                item1='Cadastro dos pontos'
+                item2='Sobre'
+                item3='Voltar para a home' />
             </div>
         </div>
     )

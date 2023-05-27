@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from "./componentes/pages/home";
 import NotFound from './componentes/pages/notFound';
-import Caminho1 from './componentes/pages/contatos';
-import Caminho2 from './componentes/pages/sobre';
-import Caminho3 from './componentes/pages/recebento';
+import FormularioColeta from './componentes/pages/formularioColeta';
+import CadastroColeta from './componentes/pages/cadastroColeta';
+import Detalhamento from './componentes/pages/detalhamento';
+import LogAdm from './componentes/pages/logAdm';
+
 
 
 
@@ -15,11 +17,11 @@ function App() {
     <div >
       <Routes>
         <Route path='/'element={<Home />} />
-        <Route path='/home/contatos'element={<Caminho1 />} />
-        <Route path='/home/sobre'element={<Caminho2 />} />
-        <Route path='/home/recebendo'element={<Caminho3 />} />
-        < Route path="*" element={< NotFound />} />
-
+        <Route path='/home/detalhamento'element={<Detalhamento />} />
+        <Route path='/home/cadastrocoleta'element={<CadastroColeta />} />
+        <Route path='/home/formulariocoleta'element={<FormularioColeta />} />
+        <Route path='/home/logdev'element={<LogAdm />} />
+        <Route path="*" element={< NotFound />} />
       </Routes>
     </div >
   );
