@@ -7,10 +7,33 @@ function Home(){
             <div>
                 <Cabecalho />
             </div>
-            <div>
+            <div className='bodyhome'>
                 
-            </div>
+                <div className='feeds'>
+                    "Evento"
+                </div>
 
+                <div className='feeds'>
+                    "Evento"
+                </div>
+
+                <div className='feeds'>
+                    "Evento"
+                </div>
+
+                <div className='feeds'>
+                    "Evento"
+                </div>
+
+                <div className='feeds'>
+                    "Evento"
+                </div>
+
+                <div className='feeds'>
+                    "Evento"
+                </div>
+
+            </div>
         </div>
     )
 

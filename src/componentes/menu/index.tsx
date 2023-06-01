@@ -11,10 +11,10 @@ type Props={
 
 function Menu(item:Props){
     return(
-        <div>
-            <div><Link to='/home/formulariocoleta'>{item.item1}</Link></div>
-            <div><Link to='/home/sobre'>{item.item2}</Link></div>  
-            <div><Link to='/'>{item.item3}</Link></div>
+        <div className='menuPai'>
+            <div className='linkMenu'><Link to='/home/formulariocoleta'>{item.item1}</Link></div>
+            <div className='linkMenu'><Link to='/home/sobre'>{item.item2}</Link></div>  
+            <div className='linkMenu'><Link to='/'>{item.item3}</Link></div>
             {/*<div><Link to='/home/detalhamento'>{item.item4}</Link></div>
             <div><Link to='/home/cadastrocoleta'>{item.item5}</Link></div> */} 
             

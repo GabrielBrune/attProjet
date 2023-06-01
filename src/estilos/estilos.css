@@ -1,4 +1,60 @@
-*{
-    margin: 0px;
-    padding: 0px;
+a{
+    display: inline-block;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0px 4px;
+}
+
+/* Cabecalho */
+.cabPai{
+    background: rgb(0,38,107);
+    background: linear-gradient(128deg, rgba(0,38,107,1) 0%, rgba(68,114,196,1) 40%);  
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 60px;
+    width: 100%;
+    height: 60px
+
+}
+
+.menuPai{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    width: 100%;
+}
+
+.linkMenu{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:0px;
+    
+    display: inline-block;
+    text-align: center;
+
+}
+
+/* BODY DA PAGINA */
+.bodyhome{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.feeds{
+    padding: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgb(89, 180, 255);
+
+
 }
