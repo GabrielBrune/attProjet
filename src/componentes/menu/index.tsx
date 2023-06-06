@@ -1,5 +1,6 @@
 import '../../estilos/estilos.css'
 import { Link } from 'react-router-dom';
+import Rodape from '../rodape';
 
 type Props={
     item1:String;
@@ -12,8 +13,8 @@ type Props={
 function Menu(item:Props){
     return(
         <div className='menuPai'>
-            <div className='linkMenu'><Link to='/home/formulariocoleta'>{item.item1}</Link></div>
-            <div className='linkMenu'><Link to='/home/sobre'>{item.item2}</Link></div>  
+            <div className='linkMenu'><Link to='formulariocoleta'>{item.item1}</Link></div>
+            <div className='linkMenu'><Link to='Rodape'>{item.item2}</Link></div>  
             <div className='linkMenu'><Link to='/'>{item.item3}</Link></div>
             {/*<div><Link to='/home/detalhamento'>{item.item4}</Link></div>
             <div><Link to='/home/cadastrocoleta'>{item.item5}</Link></div> */} 
