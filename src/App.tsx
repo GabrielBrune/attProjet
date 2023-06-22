@@ -17,10 +17,10 @@ function App() {
     <div >
       <Routes>
         <Route path='/'element={<Home />} />
-        <Route path='/home/detalhamento/:id' element={<Detalhamento />} />
-        <Route path='/home/cadastrocoleta'element={<CadastroColeta />} />
-        <Route path='/home/formulariocoleta'element={<FormularioColeta />} />
-        <Route path='/home/logdev'element={<LogAdm />} />
+        <Route path='/detalhamento/:id' element={<Detalhamento />} />
+        <Route path='/cadastrocoleta'element={<CadastroColeta />} />
+        <Route path='/formulariocoleta'element={<FormularioColeta />} />
+        <Route path='/logdev'element={<LogAdm />} />
         <Route path="*" element={< NotFound />} />
       </Routes>
     </div >

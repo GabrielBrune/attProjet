@@ -1,47 +1,27 @@
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
-import Rodape from '../rodape';
+import PontoColeta from '../pontocoleta';
+import { Pontos } from '../types/pontos';
+
+
 
 function Home(){
+    //const[loading, setLoading] = useState(false);
+    
+    const[Pontos, setPontos] = useState<Pontos[]>([]);
+
+    //setLoading(true);
+
     return(
         <div>
             <div>
                 <Cabecalho />
             </div>
-            <div className='bodyhome'>
-
-                <div className='feeds'>
-                        <Link to='/home/detalhamento/:Ponto1'>
-                            PONTO DE COLETA 
-                        </Link>
-                    </div>
-                    
-                    <div className='feeds'>
-                        <Link to='/home/detalhamento/:Ponto2'>
-                            PONTO DE COLETA 
-                        </Link>
-                    </div>
-
-                    <div className='feeds'>
-                        <Link to='/home/detalhamento/:Ponto3'>
-                            PONTO DE COLETA
-                        </Link>
-                    </div>
-
-                    <div className='feeds'>
-                        <Link to='/home/detalhamento/:Ponto4'>
-                            PONTO DE COLETA
-                        </Link>
-                    </div>
-
-                    <div className='feeds'>
-                        <Link to='/home/detalhamento/:Ponto5'>
-                            PONTO DE COLETA
-                        </Link>
-                    </div>
-
-                    <Rodape />
+             <div className=''>
+                {Pontos.map((item, index) =>(
+                    <PontoColeta key={index} dados={item} />
+                ))}
             </div>
         </div>
     )
