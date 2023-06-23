@@ -3,7 +3,7 @@ import '../../estilos/estilos.css'
 function CadastroColeta(){
     return(
         <div>
-
+            
         </div>
     )
 }

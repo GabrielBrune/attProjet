@@ -18,9 +18,9 @@ const carregarPontos = async () =>{
         
         let json = await response.json();
 
-        const array = Array.isArray(json)? json : [json];
+        const dataArray = Array.isArray(json)? json : [json];
         
-        setPontos(array);
+        setPontos(dataArray);
     } catch (e){
         alert('Falha no carregamento das informação');
         setLoading(false);
