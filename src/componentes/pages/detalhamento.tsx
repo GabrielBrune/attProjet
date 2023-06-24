@@ -11,10 +11,14 @@ function Detalhamento(){
     useEffect(()=>{
         carregarPontos();
     })
+
 const carregarPontos = async () =>{
    setLoading(true);
+   
+
+
    try{
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos/:id');
+        let response = await fetch('https://jsonplaceholder.typicode.com/todos/');
         
         let json = await response.json();
 
@@ -40,8 +44,14 @@ const carregarPontos = async () =>{
 
             {loading && (
 
-            <div>
-                {Pontos.length}
+            <div className='teste'>
+                {Pontos.map((item) =>(
+                    <div>
+                    {item.id}
+                    {item.title}
+                    {item.userId}
+                    </div>
+                ))}
             </div>
 
             )}
@@ -51,3 +61,4 @@ const carregarPontos = async () =>{
 }
 
 export default Detalhamento;
+
