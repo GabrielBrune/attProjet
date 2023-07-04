@@ -1,6 +1,6 @@
 import '../../estilos/estilos.css'
 
-function CadastroColeta(){
+function Pedidos(){
     return(
         <div>
             
@@ -8,4 +8,4 @@ function CadastroColeta(){
     )
 }
 
-export default CadastroColeta;
+export default Pedidos;

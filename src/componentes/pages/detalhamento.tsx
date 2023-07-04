@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
+import { api } from '../../api';
 import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
 import { Pontos } from '../types/pontos';
@@ -7,6 +8,7 @@ import { Pontos } from '../types/pontos';
 function Detalhamento(){
     const [loading, setLoading] = useState(false);
     const [Pontos, setPontos] = useState<Pontos[]>([]);
+    const [paramID, setParamID] = useState('');
 
     useEffect(()=>{
         carregarPontos();
@@ -15,22 +17,27 @@ function Detalhamento(){
 const carregarPontos = async () =>{
    setLoading(true);
    
-
-
    try{
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos/');
-        
-        let json = await response.json();
-
+    
+        let json = api.listPointID(paramID);
         const dataArray = Array.isArray(json)? json : [json];
         
         setPontos(dataArray);
+
     } catch (e){
         alert('Falha no carregamento das informação');
         setLoading(false);
         console.error(e);
     }
-
+    
+    const handleParamIDChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setParamID(e.target.value)
+    }   
+    
+    useEffect(() => {
+        handleParamIDChange
+    } , []);
+    
 }
 
     return(
