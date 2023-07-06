@@ -20,7 +20,7 @@ const carregarPontos = async () =>{
    
    try{
     
-        let json = await api.listPointID(paramID);
+        let json = await await api.listPointID(paramID);
         const dataArray = Array.isArray(json)? json : [json];
         
         setPontos(dataArray);
