@@ -2,6 +2,7 @@ import { ChangeEvent, useEffect, useState } from 'react';
 import { api } from '../../api';
 import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
+import PontoColeta from '../pontocoleta';
 import { Pontos } from '../types/pontos';
 
 
@@ -19,7 +20,7 @@ const carregarPontos = async () =>{
    
    try{
     
-        let json = api.listPointID(paramID);
+        let json = await api.listPointID(paramID);
         const dataArray = Array.isArray(json)? json : [json];
         
         setPontos(dataArray);
@@ -52,11 +53,9 @@ const carregarPontos = async () =>{
             {loading && (
 
             <div className='teste'>
-                {Pontos.map((item) =>(
+                {Pontos.map((item, index) =>(
                     <div>
-                    {item.id}
-                    {item.title}
-                    {item.userId}
+                          <PontoColeta key={index} dados={item} />
                     </div>
                 ))}
             </div>

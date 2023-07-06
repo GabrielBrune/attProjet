@@ -37,6 +37,11 @@ const carregarPontos = async () =>{
             <div>
                 <Cabecalho /> 
             </div>
+            {!loading &&(
+                <h1>Erro ao carregar a home</h1>
+            )}
+
+            {loading && (
             <div className='corpPag'>
                 <div className='bodyhome'>
                         {Pontos.map((item, index) =>(
@@ -46,6 +51,7 @@ const carregarPontos = async () =>{
                         ))}
                 </div>
             </div>
+            )}
         </div>
     )
 

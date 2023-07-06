@@ -16,13 +16,13 @@ function PontoColeta({dados} : Props){
     return(
         <div>
             <div>
-                {dados.nome}{dados.cep}
-                {dados.logradouro}{dados.numero}
-                {dados.complemento}{dados.bairro}
-                {dados.cidade}{dados.estado}
-                {dados.dataInicio}{dados.dataTermino}
-                {dados.pontoRef}{dados.descricao}
-                {dados.telefone}{dados.email}
+                <div>
+                {dados.nome}
+                </div>
+                <div>
+                {dados.dataInicio}
+                {dados.dataTermino}
+                </div>
             </div>
             <div>
                 <Link to='/detalhamento/:id'>Saiba Mais</Link>
