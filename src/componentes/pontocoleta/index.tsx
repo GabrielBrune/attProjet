@@ -4,10 +4,10 @@ import '../../estilos/estilos.css'
 
 type Props={
     dados:{
-        nome:string, cep:BigInteger, logradouro:string,
-        numero:BigInteger, complemento:string, bairro:string,cidade:string, estado:string, 
-        dataInicio:BigInteger,dataTermino:BigInteger, pontoRef:string, descricao:string,
-        telefone:BigInteger, email:string
+        nome:string, cep:string, logradouro:string,
+        numero:string, complemento:string, bairro:string,cidade:string, estado:string, 
+        dataInicio:string,dataTermino:string, pontoRef:string, descricao:string,
+        telefone:string, email:string
     }
 }
 
