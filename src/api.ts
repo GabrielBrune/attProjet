@@ -1,7 +1,7 @@
 
 
 export const api={
-    lisPointName: async (nome:string) =>{
+    listPointName: async (nome:string) =>{
         let response = await fetch('https://jsonplaceholder.typicode.com/todos/'+nome);
         
         let json = await response.json();
