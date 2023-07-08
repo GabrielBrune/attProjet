@@ -5,7 +5,7 @@ import { tpPontos } from '../types/pontos';
 
 
 function TelaForm() {
-    const [Pontos, setPontos] = useState<tpPontos[]>([])
+    const [pontos, setPontos] = useState<tpPontos[]>([])
 
     const handleInserir = async (
         img:string,
@@ -45,7 +45,7 @@ function TelaForm() {
 
         if (json.id) {
             alert('Post Adicionado com sucesso!')
-            setPontos((Pontos) => [...Pontos, json]);
+            setPontos((pontos) => [...pontos, json]);
         } else {
             alert('Ocorreu alguma falha no post do ponto!')
         }
