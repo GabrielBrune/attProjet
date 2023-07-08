@@ -3,10 +3,22 @@ import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
 
 type Props = {
-    onAdd : (nome:string, cep:string, logradouro:string,
-        numero:string, complemento:string, bairro:string,cidade:string, estado:string, 
-        dataInicio:string,dataTermino:string, pontoRef:string, descricao:string,
-        telefone:string, email:string) => void; 
+    onAdd : (
+        img:string,
+        nome:string, 
+        cep:string, 
+        logradouro:string,
+        numero:string, 
+        complemento:string, 
+        bairro:string,
+        cidade:string, 
+        estado:string, 
+        dataInicio:string,
+        dataTermino:string, 
+        pontoRef:string, 
+        descricao:string,
+        telefone:string, 
+        email:string) => void; 
 
 }
 
@@ -17,13 +29,32 @@ function FormularioColeta({onAdd}:Props){
             && Complemento && Bairro && Cidade &&
             Estado && DataInicio && DataTermino &&
             PontoRef && Descricao && Telefone && Email){
-                onAdd(Nome, Cep, Logradouro, Numero, Complemento, Bairro, Cidade,
-                     Estado, DataInicio,DataTermino, PontoRef, Descricao, Telefone, Email)
+
+                onAdd(
+                    Img,
+                    Nome, 
+                    Cep, 
+                    Logradouro, 
+                    Numero, 
+                    Complemento, 
+                    Bairro, 
+                    Cidade,
+                    Estado, 
+                    DataInicio,
+                    DataTermino, 
+                    PontoRef, 
+                    Descricao, 
+                    Telefone, 
+                    Email);
             }else{
                 alert('Preencha todos os campos!')
             }
     }
     
+    const[Img, setImg] = useState('')
+    const handleImgAdd = (e:ChangeEvent<HTMLInputElement>)=>(
+        setImg(e.target.value)
+    )
 
     const[Bairro, setBairro] = useState('')
     const handleBairroAdd = (e:ChangeEvent<HTMLInputElement>)=>(
@@ -102,6 +133,13 @@ function FormularioColeta({onAdd}:Props){
                 <Cabecalho/>
             </div>
             <div>
+            <input 
+                value={Img}
+                type = 'image'
+                placeholder="Adicione uma imagem do local"
+                onChange={handleImgAdd}
+                />
+
             <input 
                 value={Nome}
                 type = 'text'
