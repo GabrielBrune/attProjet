@@ -3,8 +3,6 @@ import { api } from "../../api";
 import FormularioColeta from "../FormColeta";
 import { tpPontos } from '../types/pontos';
 
-{/*teste teste teste*/}
-
 
 function TelaForm() {
     const [pontos, setPontos] = useState<tpPontos[]>([])
