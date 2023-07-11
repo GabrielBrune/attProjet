@@ -3,7 +3,7 @@ import { api } from '../../api';
 import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
 import PontoColeta from '../pontocoleta';
-import { Pontos } from '../types/pontos';
+import { tpPontos } from '../types/pontos';
 
 
 function Detalhamento(){
