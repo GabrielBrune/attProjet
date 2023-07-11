@@ -89,14 +89,14 @@ a{
 }
 .box-conteiner-log{
     border-radius: 10px;
-    box-shadow: 9px 8px 20px rgb(150, 148, 148);
+    box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.247);
     display: flex;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     border: 3px solid;
     background-color: rgb(233, 233, 233);
-    border-color:  rgba(68,114,196,1);
+    border-color:  rgb(0, 59, 160);    
     margin:100px;
     margin-left:auto;
     margin-right:auto ;
@@ -109,4 +109,12 @@ a{
 
 .paddinglog{
     padding: 40px;
+}
+
+.background-Log{
+    background: linear-gradient(15deg, rgba(0,38,107,1) 2%, rgb(56, 100, 177) 40%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
 }

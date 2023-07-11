@@ -24,34 +24,36 @@ const LogAdm = () => {
         <div>
             <Cabecalho/>
         </div>
-        <div className='box-conteiner-log'>
-          <div>
-          <form>
-          <div className='paddinglog'>
-              <h2>Usuário</h2>
-              <input className='Adm'
-              type="text"
-              id="username"
-              placeholder='Usuario'
-              value={username}
-              onChange={handleUsernameChange}
-              required
-              />
-          </div>
-          <div>
-            <h2>Senha</h2>
-              <input  className='Adm'
-              type="password"
-              id="password"
-              placeholder='Senha'
-              value={password}
-              onChange={handlePasswordChange}
-              required
-              />
-          </div>
-          <button onClick={handleEnter}>Entrar</button>
-          </form>
-        </div>
+          <div className='background-Log'>
+            <div className='box-conteiner-log'>
+              <div>
+              <form>
+              <div className='paddinglog'>
+                  <h2>Usuário</h2>
+                  <input className='Adm'
+                  type="text"
+                  id="username"
+                  placeholder='Usuario'
+                  value={username}
+                  onChange={handleUsernameChange}
+                  required
+                  />
+              </div>
+              <div>
+                <h2>Senha</h2>
+                  <input  className='Adm'
+                  type="password"
+                  id="password"
+                  placeholder='Senha'
+                  value={password}
+                  onChange={handlePasswordChange}
+                  required
+                  />
+              </div>
+              <button onClick={handleEnter}>Entrar</button>
+              </form>
+            </div>
+            </div>
         </div>
     </div>
   );
