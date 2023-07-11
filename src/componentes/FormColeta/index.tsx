@@ -132,104 +132,106 @@ function FormularioColeta({onAdd}:Props){
             <div>
                 <Cabecalho/>
             </div>
+          <div className= 'box-conteiner-formcoleta'>
+            <div className='FormColeta'>
             <div>
-            <input 
+            <input className='imgForm' 
                 value={Img}
                 type = 'image'
                 placeholder="Adicione uma imagem do local"
                 onChange={handleImgAdd}
                 />
 
-            <input 
+            <input className='nomeForm'
                 value={Nome}
                 type = 'text'
                 placeholder="Digite o Nome da entidade"
                 onChange={handleNomeAdd}
                 />
             <br/>
-            <input 
+            <input className='cepForm'
                 value={Cep}
                 type = 'text'
                 placeholder="Digite o cep"
                 onChange={handleCepAdd}
                 />
             <br/>
-            <input 
+            <input className='logradouroForm'
                 value={Logradouro}
                 type = 'text'
                 placeholder="Digite o logradouro"
                 onChange={handleLogradouroAdd}
                 />
             <br/>
-            <input 
+            <input className='numeroForm'
                 value={Numero}
                 type = 'text'
                 placeholder="Digite o numero"
                 onChange={handleNumeroAdd}
                  />
             <br/>
-            <input 
+            <input className='complementoForm'
                 value={Complemento}
                 type = 'text'
                 placeholder="Digite o complemento"
                 onChange={handleCompletoAdd}
                 />
             <br/>
-            <input 
+            <input className='bairroForm'
                 value={Bairro}
                 type = 'text'
                 placeholder="Digite o bairro"
                 onChange={handleBairroAdd}
                 />
             <br/>
-            <input 
+            <input className='cidadeForm'
                 value={Cidade}
                 type = 'text'
                 placeholder="Digite a cidade"
                 onChange={handleCidadeAdd}
                 />
             <br/>
-            <input 
+            <input className='estadoForm'
                 value={Estado}
                 type = 'text'
                 placeholder="Digite o Estado"
                 onChange={handleEstadoAdd}
                 />
             <br/>
-            <textarea 
+            <textarea className='pontorefForm'
                 value={PontoRef}
                 placeholder="Digite o ponto de referencia"
                 onChange={handlePontoRefAdd}
                 />
             <br/>
                  <label>Data inicio:</label>
-            <input 
+            <input className='datainicioForm'
                 value={DataInicio}
                 type = 'date'
                 onChange={handleDataInicioAdd}
                 />
             <br/>
                  <label>Data Termino:</label>
-            <input 
+            <input className='dataterminoForm'
                 value={DataTermino}
                 type = 'date'
                 onChange={handleDataTerminoAdd}
                 />
             <br/>
-            <textarea 
+            <textarea className='descricaoForm'
                 value={Descricao}
                 placeholder="Digite o Nome da entidade"
                 onChange={handleDescricaoAdd}
                 />
             <br/>
-            <input 
+            <input className='telefoneForm'
                 value={Telefone}
                 type = 'text'
                 placeholder="Digite o telefone"
                 onChange={handleTelefoneAdd}
                 />
             <br/>
-            <input 
+            <input className='emailForm'
                 value={Email}
                 type = 'text'
                 placeholder="Digite o Email"
@@ -238,6 +240,8 @@ function FormularioColeta({onAdd}:Props){
             </div>
             <button onClick={handleAddClick}>Enviar</button>
 
+        </div>
+        </div>
         </div>
     );   
 }

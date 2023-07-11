@@ -26,17 +26,17 @@ function PontoColeta({dados} : Props){
     
     return(
         <div>
-            <div>
-                <div>
+            <div className='box-container'>
+                <div className='nome-empresa'>
                 {dados.nome}
                 </div>
-                <div>
+                <div className='data-it'>
                 {dados.dataInicio}
                 {dados.dataTermino}
                 </div>
-            </div>
-            <div>
+                <div className='saiba-mais'>
                 <Link to='/detalhamento/:id'>Saiba Mais</Link>
+                </div>
             </div>
         </div>
     )
