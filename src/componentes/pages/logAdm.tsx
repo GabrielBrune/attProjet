@@ -1,4 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import { Link } from 'react-router-dom';
 import Cabecalho from '../cabecalho';
 
 const LogAdm = () => {
@@ -13,12 +14,10 @@ const LogAdm = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-
-    setUsername('');
-    setPassword('');
-  };
+  const handleEnter = () => {
+    if(username){
+    <Link to='/'></Link>
+  }}
 
   return (
     <div>
@@ -27,7 +26,7 @@ const LogAdm = () => {
         </div>
         <div className='box-conteiner-log'>
           <div>
-          <form onSubmit={handleSubmit}>
+          <form>
           <div className='paddinglog'>
               <h2>Usuário</h2>
               <input className='Adm'
@@ -50,7 +49,7 @@ const LogAdm = () => {
               required
               />
           </div>
-          <button type="submit">Entrar</button>
+          <button onClick={handleEnter}>Entrar</button>
           </form>
         </div>
         </div>
