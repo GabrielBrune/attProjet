@@ -25,30 +25,33 @@ const LogAdm = () => {
         <div>
             <Cabecalho/>
         </div>
-        
-        <form onSubmit={handleSubmit}>
-        <div>
-            <label htmlFor="username">Usuário:</label>
-            <input
-            type="text"
-            id="username"
-            value={username}
-            onChange={handleUsernameChange}
-            required
-            />
+        <div className='box-conteiner-log'>
+          <form onSubmit={handleSubmit}>
+          <div className='paddinglog'>
+              <h2>Usuário</h2>
+              <input className='Adm'
+              type="text"
+              id="username"
+              placeholder='Usuario'
+              value={username}
+              onChange={handleUsernameChange}
+              required
+              />
+          </div>
+          <div>
+            <h2>Senha</h2>
+              <input  className='Adm'
+              type="password"
+              id="password"
+              placeholder='Senha'
+              value={password}
+              onChange={handlePasswordChange}
+              required
+              />
+          </div>
+          <button type="submit">Entrar</button>
+          </form>
         </div>
-        <div>
-            <label htmlFor="password">Senha:</label>
-            <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={handlePasswordChange}
-            required
-            />
-        </div>
-        <button type="submit">Entrar</button>
-        </form>
     </div>
   );
 };

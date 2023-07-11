@@ -25,7 +25,7 @@ function PontoColeta({dados} : Props){
                 </div>
             </div>
             <div>
-                <Link to='/detalhamento/:id'>Saiba Mais</Link>
+                <Link to='/detalhamento/'>Saiba Mais</Link>
             </div>
         </div>
     )
