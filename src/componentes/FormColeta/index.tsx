@@ -137,70 +137,70 @@ function FormularioColeta({onAdd}:Props){
           <div className= 'box-conteiner-formcoleta'>
             <div className='FormColeta'>
             <div>
-            <input className='imgForm' 
+            <input className='cssForm' 
                 value={Img}
                 type = 'image'
                 placeholder="Adicione uma imagem do local"
                 onChange={handleImgAdd}
                 />
 
-            <input className='nomeForm'
+            <input className='cssForm'
                 value={Nome}
                 type = 'text'
                 placeholder="Digite o Nome da entidade"
                 onChange={handleNomeAdd}
                 />
             <br/>
-            <input className='cepForm'
+            <input className='cssForm'
                 value={Cep}
                 type = 'text'
                 placeholder="Digite o cep"
                 onChange={handleCepAdd}
                 />
             <br/>
-            <input className='logradouroForm'
+            <input className='cssForm'
                 value={Logradouro}
                 type = 'text'
                 placeholder="Digite o logradouro"
                 onChange={handleLogradouroAdd}
                 />
             <br/>
-            <input className='numeroForm'
+            <input className='cssForm'
                 value={Numero}
                 type = 'text'
                 placeholder="Digite o numero"
                 onChange={handleNumeroAdd}
                  />
             <br/>
-            <input className='complementoForm'
+            <input className='cssForm'
                 value={Complemento}
                 type = 'text'
                 placeholder="Digite o complemento"
                 onChange={handleCompletoAdd}
                 />
             <br/>
-            <input className='bairroForm'
+            <input className='cssForm'
                 value={Bairro}
                 type = 'text'
                 placeholder="Digite o bairro"
                 onChange={handleBairroAdd}
                 />
             <br/>
-            <input className='cidadeForm'
+            <input className='cssForm'
                 value={Cidade}
                 type = 'text'
                 placeholder="Digite a cidade"
                 onChange={handleCidadeAdd}
                 />
             <br/>
-            <input className='estadoForm'
+            <input className='cssForm'
                 value={Estado}
                 type = 'text'
                 placeholder="Digite o Estado"
                 onChange={handleEstadoAdd}
                 />
             <br/>
-            <textarea className='pontorefForm'
+            <textarea className='cssForm'
                 value={PontoRef}
                 placeholder="Digite o ponto de referencia"
                 onChange={handlePontoRefAdd}
@@ -220,20 +220,20 @@ function FormularioColeta({onAdd}:Props){
                 onChange={handleDataTerminoAdd}
                 />
             <br/>
-            <textarea className='descricaoForm'
+            <textarea className='cssForm'
                 value={Descricao}
                 placeholder="Digite o Nome da entidade"
                 onChange={handleDescricaoAdd}
                 />
             <br/>
-            <input className='telefoneForm'
+            <input className='cssForm'
                 value={Telefone}
                 type = 'text'
                 placeholder="Digite o telefone"
                 onChange={handleTelefoneAdd}
                 />
             <br/>
-            <input className='emailForm'
+            <input className='cssForm'
                 value={Email}
                 type = 'text'
                 placeholder="Digite o Email"
