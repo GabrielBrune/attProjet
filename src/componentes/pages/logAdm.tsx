@@ -26,6 +26,7 @@ const LogAdm = () => {
             <Cabecalho/>
         </div>
         <div className='box-conteiner-log'>
+          <div>
           <form onSubmit={handleSubmit}>
           <div className='paddinglog'>
               <h2>Usuário</h2>
@@ -51,6 +52,7 @@ const LogAdm = () => {
           </div>
           <button type="submit">Entrar</button>
           </form>
+        </div>
         </div>
     </div>
   );

@@ -3,12 +3,12 @@ import { api } from '../../api';
 import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
 import PontoColeta from '../pontocoleta';
-import { Pontos } from '../types/pontos';
+import { tpPontos } from '../types/pontos';
 
 
 function Detalhamento(){
     const [loading, setLoading] = useState(false);
-    const [Pontos, setPontos] = useState<Pontos[]>([]);
+    const [Pontos, setPontos] = useState<tpPontos[]>([]);
     const [paramID, setParamID] = useState('');
 
     useEffect(()=>{
