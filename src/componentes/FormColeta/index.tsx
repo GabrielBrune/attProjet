@@ -22,6 +22,8 @@ type Props = {
 
 }
 
+{/*ghggh*/}
+
 function FormularioColeta({onAdd}:Props){
 
     function handleAddClick(){

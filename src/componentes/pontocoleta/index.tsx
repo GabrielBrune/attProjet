@@ -34,9 +34,9 @@ function PontoColeta({dados} : Props){
                 {dados.dataInicio}
                 {dados.dataTermino}
                 </div>
-                <div className='saiba-mais'>
-                <Link to='/detalhamento/:id'>Saiba Mais</Link>
-                </div>
+            </div>
+            <div>
+                <Link to='/detalhamento/'>Saiba Mais</Link>
             </div>
         </div>
     )
