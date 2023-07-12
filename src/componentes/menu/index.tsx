@@ -13,9 +13,9 @@ type Props={
 function Menu(item:Props){
     return(
         <div className='menuPai'>
-            <div className='linkMenu'><Link to='formulariocoleta'>{item.item1}</Link></div>
-            <div className='linkMenu'><Link to=''>{item.item2}</Link></div>  
-            <div className='linkMenu'><Link to='/'>{item.item3}</Link></div>
+            <div className='linkMenu'><Link to='/'>{item.item1}</Link></div>
+            <div className='linkMenu'><Link to='formulariocoleta'>{item.item2}</Link></div>  
+            <div className='linkMenu'><Link to='sobre'>{item.item3}</Link></div>
             {/*<div><Link to='/home/detalhamento'>{item.item4}</Link></div>
             <div><Link to='/home/cadastrocoleta'>{item.item5}</Link></div> */} 
             
