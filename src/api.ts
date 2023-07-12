@@ -2,21 +2,21 @@
 
 export const api={
     listPointName: async (nome:string) =>{
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos/'+nome);
+        let response = await fetch('http://localhost:3000/'+nome);
         
         let json = await response.json();
         return json;
     },
 
     listPointID: async (id:string) =>{
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos/'+id);
+        let response = await fetch('http://localhost:3000/'+id);
         
         let json = await response.json();
         return json;
     },
     
     addPoint: async(
-        img:string,
+
         nome:string, 
         cep:string, 
         logradouro:string,
@@ -27,16 +27,14 @@ export const api={
         estado:string, 
         dataInicio:string,
         dataTermino:string, 
-        pontoRef:string, 
         descricao:string,
         telefone:string, 
         email:string) =>{
 
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos/',{
+        let response = await fetch('http://localhost:3000/',{
                                     method:'POST',
                                     body:JSON.stringify
                                     ({
-                                        img: img,
                                         nome: nome, 
                                         cep: cep, 
                                         logradouro: logradouro, 
@@ -46,8 +44,7 @@ export const api={
                                         cidade: cidade, 
                                         estado: estado,
                                         dataInicio: dataInicio, 
-                                        dataTermino: dataTermino,
-                                        pontoRef: pontoRef, 
+                                        dataTermino: dataTermino, 
                                         descricao: descricao,
                                         telefone: telefone, 
                                         email: email
@@ -58,14 +55,14 @@ export const api={
     },
 
     modPoint: async (id:string) =>{
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos/'+id, {method:'PUT'});
+        let response = await fetch('http://localhost:3000/'+id, {method:'PUT'});
         
         let json = await response.json();
         return json;
     },
 
     removePoint: async (id:string) =>{
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos/'+id, {method:'DELETE'});
+        let response = await fetch('http://localhost:3000/'+id, {method:'DELETE'});
         
         let json = await response.json();
         return json;

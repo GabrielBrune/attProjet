@@ -8,7 +8,6 @@ function TelaForm() {
     const [pontos, setPontos] = useState<tpPontos[]>([])
 
     const handleInserir = async (
-        img:string,
         nome: string, 
         cep: string, 
         logradouro: string,
@@ -19,14 +18,12 @@ function TelaForm() {
         estado: string,
         dataInicio: string, 
         dataTermino: string, 
-        pontoRef: string, 
         descricao: string,
         telefone: string, 
         email: string) => {
 
 
         let json = await api.addPoint(
-                img,
                 nome, 
                 cep, 
                 logradouro, 
@@ -37,7 +34,6 @@ function TelaForm() {
                 estado,
                 dataInicio, 
                 dataTermino, 
-                pontoRef,
                 descricao, 
                 telefone, 
                 email

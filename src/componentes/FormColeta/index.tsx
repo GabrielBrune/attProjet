@@ -4,7 +4,6 @@ import Cabecalho from '../cabecalho';
 
 type Props = {
     onAdd: (
-        img: string,
         nome: string,
         cep: string,
         logradouro: string,
@@ -15,7 +14,6 @@ type Props = {
         estado: string,
         dataInicio: string,
         dataTermino: string,
-        pontoRef: string,
         descricao: string,
         telefone: string,
         email: string) => void;
@@ -30,10 +28,9 @@ function FormularioColeta({ onAdd }: Props) {
         if (Nome && Cep && Logradouro && Numero
             && Complemento && Bairro && Cidade &&
             Estado && DataInicio && DataTermino &&
-            PontoRef && Descricao && Telefone && Email) {
+            Descricao && Telefone && Email) {
 
             onAdd(
-                Img,
                 Nome,
                 Cep,
                 Logradouro,
@@ -44,7 +41,6 @@ function FormularioColeta({ onAdd }: Props) {
                 Estado,
                 DataInicio,
                 DataTermino,
-                PontoRef,
                 Descricao,
                 Telefone,
                 Email);
@@ -53,10 +49,10 @@ function FormularioColeta({ onAdd }: Props) {
         }
     }
 
-    const [Img, setImg] = useState('')
-    const handleImgAdd = (e: ChangeEvent<HTMLInputElement>) => (
-        setImg(e.target.value)
-    )
+    // const [Img, setImg] = useState('')
+    // const handleImgAdd = (e: ChangeEvent<HTMLInputElement>) => (
+    //     setImg(e.target.value)
+    // )
 
     const [Bairro, setBairro] = useState('')
     const handleBairroAdd = (e: ChangeEvent<HTMLInputElement>) => (
@@ -118,11 +114,6 @@ function FormularioColeta({ onAdd }: Props) {
         setNumero(e.target.value)
     )
 
-    const [PontoRef, setPontoRef] = useState('')
-    const handlePontoRefAdd = (e: ChangeEvent<HTMLTextAreaElement>) => (
-        setPontoRef(e.target.value)
-    )
-
     const [Telefone, setTelefone] = useState('')
     const handleTelefoneAdd = (e: ChangeEvent<HTMLInputElement>) => (
         setTelefone(e.target.value)
@@ -175,6 +166,7 @@ function FormularioColeta({ onAdd }: Props) {
                         placeholder="Digite o complemento"
                         onChange={handleCompletoAdd}
                     />
+                    
                     <br />
                     <input className='cssForm'
                         value={Bairro}
@@ -182,6 +174,7 @@ function FormularioColeta({ onAdd }: Props) {
                         placeholder="Digite o bairro"
                         onChange={handleBairroAdd}
                     />
+
                     <br />
                     <input className='cssForm'
                         value={Cidade}
@@ -189,6 +182,7 @@ function FormularioColeta({ onAdd }: Props) {
                         placeholder="Digite a cidade"
                         onChange={handleCidadeAdd}
                     />
+
                     <br />
                     <input className='cssForm'
                         value={Estado}
@@ -196,6 +190,7 @@ function FormularioColeta({ onAdd }: Props) {
                         placeholder="Digite o Estado"
                         onChange={handleEstadoAdd}
                     />
+
                     <br />
                     <input className='cssForm'
                         value={Telefone}
@@ -203,6 +198,7 @@ function FormularioColeta({ onAdd }: Props) {
                         placeholder="Digite o telefone"
                         onChange={handleTelefoneAdd}
                     />
+
                     <br />
                     <input className='cssForm'
                         value={Email}
@@ -210,22 +206,23 @@ function FormularioColeta({ onAdd }: Props) {
                         placeholder="Digite o Email"
                         onChange={handleEmailAdd}
                     />
-                    <div className='datainicioForm'>
-                        <label>Inicio: </label>
-                        <input 
-                            value={DataInicio}
-                            type='date'
-                            onChange={handleDataInicioAdd}
-                        />
-                    </div>
-                    <div className='dataterminoForm'>
-                        <label>Termino: </label>
-                        <input 
-                            value={DataTermino}
-                            type='date'
-                            onChange={handleDataTerminoAdd}
-                        />
-                    </div>
+
+                   <br />
+                    <input className='cssForm'
+                        placeholder='Data de inicio'
+                        value={DataInicio}
+                        type='text'
+                        onChange={handleDataInicioAdd}
+                    />
+
+                    <br />
+                    <input className='cssForm'
+                        placeholder='Data de termino'
+                        value={DataTermino}
+                        type='text'
+                        onChange={handleDataTerminoAdd}
+                    />
+
                     <br />
                     <textarea className='cssForm1'
                         value={Descricao}
