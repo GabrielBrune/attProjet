@@ -19,13 +19,14 @@ type Props={
         descricao:string,
         telefone:string, 
         email:string
-    }
+    },
+    chave:number
 }
 
-function PontoColeta({dados} : Props){
+function PontoColeta({dados} : Props, chave:number){
     
     return(
-        <div>
+        <div key={chave}>
             <div className='box-container'>
                 <div className='nome-empresa'>
                 {dados.nome}

@@ -8,6 +8,14 @@ export const api={
         return json;
     },
 
+    renderHome: async () =>{
+        let response = await fetch('http://localhost:3010/pontos/home');
+        
+        let json = await response.json();
+        return json;
+    },
+
+
     listPointID: async (nome:string) =>{
         let response = await fetch('http://localhost:3010/pontos/detalhamento/'+nome);
         

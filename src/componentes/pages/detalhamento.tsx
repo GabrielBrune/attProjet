@@ -56,7 +56,7 @@ const carregarPontos = async () =>{
             <div className='teste'>
                 {Pontos.map((item,index) =>(
                     <div>
-                    <ListPedidos key={index} dados={item} />
+                    <ListPedidos chave={index} dados={item} />
                     </div>
                 ))}
             </div>

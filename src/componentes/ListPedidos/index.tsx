@@ -15,15 +15,16 @@ type Props={
         descricao:string,
         telefone:string, 
         email:string
-    }
+    },
+    chave:number
 }
 
 
-function ListPedidos({dados}:Props){
+function ListPedidos({dados}:Props, chave:number){
     
     
     return(
-        <div>
+        <div key={chave}>
             <div className="teste">
                 {dados.img}
                 {dados.nome}{dados.cep}
