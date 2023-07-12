@@ -24,7 +24,7 @@ function ListPedidos({dados}:Props){
     
     return(
         <div>
-            <div>
+            <div className="teste">
                 {dados.img}
                 {dados.nome}{dados.cep}
                 {dados.logradouro}{dados.numero}

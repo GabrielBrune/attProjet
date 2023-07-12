@@ -2,6 +2,7 @@ import { ChangeEvent, useEffect, useState } from 'react';
 import { api } from '../../api';
 import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
+import ListPedidos from '../ListPedidos';
 import PontoColeta from '../pontocoleta';
 import { tpPontos } from '../types/pontos';
 
@@ -55,7 +56,7 @@ const carregarPontos = async () =>{
             <div className='teste'>
                 {Pontos.map((item,index) =>(
                     <div>
-                    <PontoColeta key={index} dados={item} />
+                    <ListPedidos key={index} dados={item} />
                     </div>
                 ))}
             </div>
