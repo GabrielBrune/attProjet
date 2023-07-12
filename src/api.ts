@@ -2,14 +2,22 @@
 
 export const api={
     listPointName: async (nome:string) =>{
-        let response = await fetch('http://localhost:3000/'+nome);
+        let response = await fetch('http://localhost:3010/pontos/'+nome);
         
         let json = await response.json();
         return json;
     },
 
-    listPointID: async (id:string) =>{
-        let response = await fetch('http://localhost:3000/'+id);
+    renderHome: async () =>{
+        let response = await fetch('http://localhost:3010/pontos/home');
+        
+        let json = await response.json();
+        return json;
+    },
+
+
+    listPointID: async (nome:string) =>{
+        let response = await fetch('http://localhost:3010/pontos/detalhamento/'+nome);
         
         let json = await response.json();
         return json;
@@ -31,7 +39,7 @@ export const api={
         telefone:string, 
         email:string) =>{
 
-        let response = await fetch('http://localhost:3000/',{
+        let response = await fetch('http://localhost:3010/pontos/formulariocoleta',{
                                     method:'POST',
                                     body:JSON.stringify
                                     ({
@@ -55,18 +63,23 @@ export const api={
     },
 
     modPoint: async (id:string) =>{
-        let response = await fetch('http://localhost:3000/'+id, {method:'PUT'});
+        let response = await fetch('http://localhost:3010/pontos'+id, {method:'PUT'});
         
         let json = await response.json();
         return json;
     },
 
     removePoint: async (id:string) =>{
-        let response = await fetch('http://localhost:3000/'+id, {method:'DELETE'});
+        let response = await fetch('http://localhost:3000/pontos'+id, {method:'DELETE'});
         
         let json = await response.json();
         return json;
     },
     
-    
+    logadm:async () =>{
+        let response = await fetch('http://localhost:3000/amd');
+
+        let json = await response.json();
+        return json
+    } 
 }

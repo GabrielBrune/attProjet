@@ -17,6 +17,9 @@ function Home(){
 const carregarPontos = async () =>{
    setLoading(true);
    try{
+        // let json = await api.renderHome();
+        // const dataArray = Array.isArray(json)? json : [json];
+
         let response = await fetch('https://jsonplaceholder.typicode.com/todos/');
         
         let json = await response.json();
@@ -46,7 +49,7 @@ const carregarPontos = async () =>{
                 <div className='bodyhome'>
                         {Pontos.map((item, index) =>(
                             <div className='feeds'>
-                                <PontoColeta key={index} dados={item} />
+                                <PontoColeta chave={index} dados={item} />
                             </div>
                         ))}
                 </div>

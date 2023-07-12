@@ -26,7 +26,7 @@ function Pedidos(){
             </div>
             {ListPonto.map((item, index) =>(
                             <div className='feeds'>
-                                <ListPedidos key={index} dados={item} />
+                                <ListPedidos chave={index} dados={item} />
                             </div>
                         ))}
         </div>
