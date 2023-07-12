@@ -1,5 +1,4 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { Link } from 'react-router-dom';
 import Cabecalho from '../cabecalho';
 
 const LogAdm = () => {
@@ -15,9 +14,8 @@ const LogAdm = () => {
   };
 
   const handleEnter = () => {
-    if(username){
-    <Link to='/'></Link>
-  }}
+  
+  }
 
   return (
     <div>
@@ -29,7 +27,7 @@ const LogAdm = () => {
               <div>
               <form>
               <div className='paddinglog'>
-                  <h2>Usuário</h2>
+                  <h2>Acesso restrito</h2>
                   <input className='Adm'
                   type="text"
                   id="username"
@@ -38,10 +36,8 @@ const LogAdm = () => {
                   onChange={handleUsernameChange}
                   required
                   />
-              </div>
-              <div>
-                <h2>Senha</h2>
-                  <input  className='Adm'
+
+                  <input  className='Adm2'
                   type="password"
                   id="password"
                   placeholder='Senha'
@@ -49,8 +45,8 @@ const LogAdm = () => {
                   onChange={handlePasswordChange}
                   required
                   />
-              </div>
-              <button onClick={handleEnter}>Entrar</button>
+              </div >
+              <button className='buttonEnter' onClick={handleEnter}>ENTRAR</button>
               </form>
             </div>
             </div>
