@@ -10,18 +10,14 @@ import { tpPontos } from '../types/pontos';
 function Detalhamento(){
     const [loading, setLoading] = useState(false);
     const [Pontos, setPontos] = useState<tpPontos[]>([]);
-    const [paramID, setParamID] = useState('');
-
-    useEffect(()=>{
-        carregarPontos();
-    })
+    // const [paramID, setParamID] = useState('');
 
 const carregarPontos = async () =>{
    setLoading(true);
    
    try{
     
-        let json = await await api.listPointID(paramID);
+        let json = await api.listPointID();
         const dataArray = Array.isArray(json)? json : [json];
         
         setPontos(dataArray);
@@ -32,9 +28,9 @@ const carregarPontos = async () =>{
         console.error(e);
     }
     
-    const handleParamIDChange = (e: ChangeEvent<HTMLInputElement>) => {
-        setParamID(e.target.value)
-    }   
+    // const handleParamIDChange = (e: ChangeEvent<HTMLInputElement>) => {
+    //     setParamID(e.target.value)
+    // }   
     
     // useEffect(() => {
     //     handleParamIDChange
@@ -48,7 +44,7 @@ const carregarPontos = async () =>{
                 <Cabecalho />
             </div>
             {!loading && (
-                <h1>Carregando conteúdo ...</h1>
+                <button onClick={carregarPontos}>Carregando conteúdo</button>
             )}
 
             {loading && (

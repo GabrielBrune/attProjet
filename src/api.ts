@@ -9,15 +9,15 @@ export const api={
     },
 
     renderHome: async () =>{
-        let response = await fetch('http://localhost:3010/pontos/home');
+        let response = await fetch('http://localhost:3010/pontos');
         
         let json = await response.json();
         return json;
     },
 
 
-    listPointID: async (nome:string) =>{
-        let response = await fetch('http://localhost:3010/pontos/detalhamento/'+nome);
+    listPointID: async () =>{
+        let response = await fetch('http://localhost:3010/pontos/detalhamento/');
         
         let json = await response.json();
         return json;

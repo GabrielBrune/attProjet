@@ -46,7 +46,7 @@ const LogAdm = () => {
                   required
                   />
               </div >
-              <button className='buttonEnter' onClick={handleEnter}>ENTRAR</button>
+              <button className='buttonEnter' onClick={handleEnter}><a href='http://localhost:3000/'>ENTRAR</a></button>
               </form>
             </div>
             </div>
