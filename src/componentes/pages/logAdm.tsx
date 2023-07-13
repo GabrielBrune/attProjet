@@ -31,7 +31,7 @@ const LogAdm = () => {
                   <input className='Adm'
                   type="text"
                   id="username"
-                  placeholder='Usuario'
+                  placeholder='Usuário'
                   value={username}
                   onChange={handleUsernameChange}
                   required
