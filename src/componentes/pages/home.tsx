@@ -5,7 +5,7 @@ import PontoColeta from '../pontocoleta';
 import { tpPontos } from '../types/pontos';
 
 
-
+khfsdjmhdjh
 function Home(){
 
     const[loading, setLoading] = useState(false);
