@@ -1,34 +1,34 @@
 import '../../estilos/estilos.css'
 import { useState } from 'react'
 
-type Props={
-    dados:{
-        img:string,
-        nome:string, 
-        cep:string, 
-        logradouro:string,
-        numero:string, 
-        complemento:string, 
-        bairro:string,
-        cidade:string, 
-        estado:string, 
-        dataInicio:string,
-        dataTermino:string, 
-        pontoRef:string, 
-        descricao:string,
-        telefone:string, 
-        email:string
+type Props = {
+    dados: {
+        img: string,
+        nome: string,
+        cep: string,
+        logradouro: string,
+        numero: string,
+        complemento: string,
+        bairro: string,
+        cidade: string,
+        estado: string,
+        dataInicio: string,
+        dataTermino: string,
+        pontoRef: string,
+        descricao: string,
+        telefone: string,
+        email: string
     },
-    chave:number
+    chave: number
 }
 
-function PontoColeta({dados} : Props, chave:number){
-    const [Show , setShow] = useState(false);
+function PontoColeta({ dados }: Props, chave: number) {
+    const [Show, setShow] = useState(false);
     const handleShow = () => {
         setShow(true);
     }
-    
-    return(
+
+    return (
         <div>
             {Show && (
                 <div key={chave}>
@@ -48,22 +48,27 @@ function PontoColeta({dados} : Props, chave:number){
             )}
             {!Show && (
                 <div key={chave}>
-                    <div>
-                    {dados.img}
-                    </div>
-                    <div>{dados.nome}</div>  <div>{dados.cep}</div>
-                    <div>{dados.logradouro}</div>  <div>{dados.numero}</div>
-                    <div>{dados.complemento}</div>  <div>{dados.bairro}</div>
-                    <div>{dados.cidade}</div>  <div>{dados.estado}</div>
-                    <div>{dados.dataInicio}</div>  <div>{dados.dataTermino}</div>
-                    <div>{dados.pontoRef}</div>  <div>{dados.descricao}</div>
-                    <div>{dados.telefone}</div>  <div>{dados.email}</div>
-                   
+                    <div>{dados.img}</div>
+                    <div>{dados.nome}</div>  
+                    <div>{dados.cep}</div>
+                    <div>{dados.logradouro}</div>  
+                    <div>{dados.numero}</div>
+                    <div>{dados.complemento}</div>  
+                    <div>{dados.bairro}</div>
+                    <div>{dados.cidade}</div>  
+                    <div>{dados.estado}</div>
+                    <div>{dados.dataInicio}</div>  
+                    <div>{dados.dataTermino}</div>
+                    <div>{dados.pontoRef}</div>  
+                    <div>{dados.descricao}</div>
+                    <div>{dados.telefone}</div>  
+                    <div>{dados.email}</div>
+
 
 
                 </div>
             )}
-        
+
         </div>
     )
 }
