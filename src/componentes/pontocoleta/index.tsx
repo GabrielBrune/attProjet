@@ -63,8 +63,9 @@ function PontoColeta({ dados }: Props, chave: number) {
                     <div>{dados.descricao}</div>
                     <div>{dados.telefone}</div>  
                     <div>{dados.email}</div>
-
-
+                    <button onClick={handleShow}>
+                        <div>Saiba Mais</div>
+                    </button>
 
                 </div>
             )}
