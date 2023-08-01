@@ -3,9 +3,10 @@ import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
 import PontoColeta from '../pontocoleta';
 import { tpPontos } from '../types/pontos';
+import { api } from '../../api';
 
 
-khfsdjmhdjh
+
 function Home(){
 
     const[loading, setLoading] = useState(false);
@@ -17,14 +18,14 @@ function Home(){
 const carregarPontos = async () =>{
    setLoading(true);
    try{
-        // let json = await api.renderHome();
-        // const dataArray = Array.isArray(json)? json : [json];
+         let json = await api.renderHome();
+         const dataArray = Array.isArray(json)? json : [json];
 
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos/');
+        // let response = await fetch('https://jsonplaceholder.typicode.com/todos/');
         
-        let json = await response.json();
+        // let json = await response.json();
 
-        const dataArray = Array.isArray(json)? json : [json];
+        // const dataArray = Array.isArray(json)? json : [json];
         
         setPontos(dataArray);
     } catch (e){
