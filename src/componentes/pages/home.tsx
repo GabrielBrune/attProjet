@@ -5,8 +5,6 @@ import PontoColeta from '../pontocoleta';
 import { tpPontos } from '../types/pontos';
 import { api } from '../../api';
 
-
-
 function Home(){
 
     const[loading, setLoading] = useState(false);
