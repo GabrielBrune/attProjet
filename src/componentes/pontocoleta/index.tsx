@@ -20,6 +20,7 @@ type Props = {
         email: string
     },
     chave: number
+
 }
 
 function PontoColeta({ dados }: Props, chave: number) {
