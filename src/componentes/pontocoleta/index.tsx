@@ -42,11 +42,12 @@ function PontoColeta({dados} : Props, chave:number){
                 <div>
                     <div className='box-container'>
                         <div className='nome-empresa'>
-                        {dados.nome}
+                            {dados.nome}
                         </div>
                         <div className='data-it'>
-                        {dados.dataInicio}
-                        {dados.dataTermino}
+                            {dados.dataInicio}
+                            <br/>
+                            {dados.dataTermino}
                         </div>
                         <h2>mostrando home</h2>
                     </div>
