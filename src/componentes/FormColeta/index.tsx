@@ -20,7 +20,6 @@ type Props = {
 
 }
 
-{/*ghggh*/ }
 
 function FormularioColeta({ onAdd }: Props) {
 

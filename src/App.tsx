@@ -3,7 +3,6 @@ import Home from "./componentes/pages/home";
 import NotFound from './componentes/pages/notFound';
 import FormularioColeta from './componentes/pages/formularioColeta';
 import Pedidos from './componentes/pages/Pedidos';
-import Detalhamento from './componentes/pages/detalhamento';
 import LogAdm from './componentes/pages/logAdm';
 
 
