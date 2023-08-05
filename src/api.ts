@@ -39,7 +39,7 @@ export const api={
         telefone:string, 
         email:string) =>{
 
-        let response = await fetch('http://localhost:3010/pontos/formulariocoleta',{
+        let response = await fetch('http://localhost:3010/pontos/formulario',{
                                     method:'POST',
                                     body:JSON.stringify
                                     ({
