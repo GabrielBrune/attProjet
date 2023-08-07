@@ -14,7 +14,8 @@ const LogAdm = () => {
   };
 
   const handleEnter = () => {
-  
+    alert('Usuario: ' + username + ' Senha: ' + password )
+
   }
 
   return (
