@@ -76,10 +76,23 @@ export const api={
         return json;
     },
     
-    logadm:async () =>{
-        let response = await fetch('http://localhost:3000/amd');
+    logadm:async (username:string, password:string) =>{
+        {
+            let response = await fetch('http://localhost:3010/auth/login',
+            {
+                method:'POST',
+                body:JSON.stringify
+                ({
+                    username,
+                    password
+                }),
+                headers:{
+                    'Content-Type':'application/json; charset=utf-8'
+                }
+            });
 
-        let json = await response.json();
-        return json
-    } 
+            let json = await response.json();
+            return json
+        } 
+    }
 }
