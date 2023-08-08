@@ -1,7 +1,10 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { api } from '../../api';
 import Cabecalho from '../cabecalho';
 
 const LogAdm = () => {
+  const navigator = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -13,8 +16,15 @@ const LogAdm = () => {
     setPassword(e.target.value);
   };
 
-  const handleEnter = () => {
-    alert('Usuario: ' + username + ' Senha: ' + password )
+  const handleEnter = async () => {
+    let json = await api.logadm(username, password);
+    
+    if(json.userId){
+      alert('Bem vindo' + '\n' + username );
+      navigator('/');
+    }else{
+      alert('Usuario ou senha nao encontrado');
+    }
 
   }
 
@@ -25,8 +35,7 @@ const LogAdm = () => {
         </div>
           <div className='background-Log'>
             <div className='box-conteiner-log'>
-              <div>
-              <form>
+              <div>              
               <div className='paddinglog'>
                   <h2>Acesso restrito</h2>
                   <input className='Adm'
@@ -46,9 +55,8 @@ const LogAdm = () => {
                   onChange={handlePasswordChange}
                   required
                   />
+                  <button className='buttonEnter' onClick={handleEnter}>ENTRAR</button>              
               </div >
-              <button className='buttonEnter' onClick={handleEnter}><a href='http://localhost:3000/'>ENTRAR</a></button>
-              </form>
             </div>
             </div>
         </div>
