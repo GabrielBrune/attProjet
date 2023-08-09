@@ -42,7 +42,7 @@ const carregarPontos = async () =>{
                 <div className='bodyhome'>
                         {Pontos.map((item, index) =>(
                             
-                            <div className='feeds'>
+                            <div>
                                 <PontoColeta chave={index} dados={item} />
                             </div>
 

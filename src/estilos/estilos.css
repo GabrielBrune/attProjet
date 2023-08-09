@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .corpPag{
@@ -63,6 +64,7 @@ a{
 }
 
 .feeds{
+    display: flex;
     padding: 100px;
     margin: 20px;
     border: 1px solid;
@@ -273,4 +275,29 @@ a{
     margin-left:auto;
 }
 
+/*  Home css  */
 
+.nome-empresa-nmst{
+    border:solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+
+.data-i{
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+
+.data-t{
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+
+.button-home{
+    background-color: rgb(6, 47, 83);
+    border:solid 2px rgb(33, 73, 107);
+    color:white;
+    
+}

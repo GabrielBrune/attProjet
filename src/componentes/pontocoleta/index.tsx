@@ -37,44 +37,42 @@ function PontoColeta({dados} : Props, chave:number){
 
 
     return(
-        <div key={chave}>
+        <div key={chave} className='feeds'>
               {Show && (
                 <div>
                     <div className='box-container'>
-                        <div className='nome-empresa'>
-                            {dados.nome}
+                        <div className='nome-empresa-nmst'>
+                            <p>nome entidade</p>
                         </div>
-                        <div className='data-it'>
-                            {dados.dataInicio}
-                            <br/>
-                            {dados.dataTermino}
+                        <div className='data-i'>
+                            <p>data Inicio</p>   
                         </div>
-                        <h2>mostrando home</h2>
+                        <div className='data-t'>
+                            <p>data Termino</p>
+                        </div>
                     </div>
                 </div>
               )}
                 {!Show && (
-                    <div>
-                        <h1>mostrando detalhe</h1>
-                        <div>{dados.img}</div>
-                        <div>{dados.nome}</div>  
-                        <div>{dados.cep}</div>
-                        <div>{dados.logradouro}</div>  
-                        <div>{dados.numero}</div>
-                        <div>{dados.complemento}</div>  
-                        <div>{dados.bairro}</div>
-                        <div>{dados.cidade}</div>  
-                        <div>{dados.estado}</div>
-                        <div>{dados.dataInicio}</div>  
-                        <div>{dados.dataTermino}</div>
-                        <div>{dados.pontoRef}</div>  
-                        <div>{dados.descricao}</div>
-                        <div>{dados.telefone}</div>  
-                        <div>{dados.email}</div>
+                    <div className='box-container'>
+                        <div>IMG</div>
+                        <div>NOME</div>  
+                        <div>CEP</div>
+                        <div>LOGRADOURO</div>  
+                        <div>NUMERO"CASA</div>
+                        <div>COMPLEMENTO</div>  
+                        <div>BAIRRO</div>
+                        <div>CIDADE</div>  
+                        <div>ESTADO</div>
+                        <div>DATAINICIO</div>  
+                        <div>DATATERMINO</div>
+                        <div>DESCRIÇÃO</div>  
+                        <div>TELEFONE</div>  
+                        <div>EMAIL</div>
                     </div>
                 )}
             <div>
-               <button onClick={Mostrartodos} >Saiba mais</button>
+               <button onClick={Mostrartodos} className='button-home'>Saiba mais</button>
             </div>
         </div>
     )
