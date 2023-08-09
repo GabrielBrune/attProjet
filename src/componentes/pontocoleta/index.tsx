@@ -51,29 +51,34 @@ function PontoColeta({dados} : Props, chave:number){
                             <p>data Termino</p>
                         </div>
                     </div>
+                    <div className='button-home'>
+               <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
+            </div>
                 </div>
               )}
                 {!Show && (
                     <div className='box-container'>
-                        <div>IMG</div>
-                        <div>NOME</div>  
-                        <div>CEP</div>
-                        <div>LOGRADOURO</div>  
-                        <div>NUMERO"CASA</div>
-                        <div>COMPLEMENTO</div>  
-                        <div>BAIRRO</div>
-                        <div>CIDADE</div>  
-                        <div>ESTADO</div>
-                        <div>DATAINICIO</div>  
-                        <div>DATATERMINO</div>
-                        <div>DESCRIÇÃO</div>  
-                        <div>TELEFONE</div>  
-                        <div>EMAIL</div>
-                    </div>
-                )}
-            <div>
-               <button onClick={Mostrartodos} className='button-home'>Saiba mais</button>
+                        {/* <div className='IMG'>IMG</div> */}
+                        <div className='NOME'>NOME</div>  
+                        <div className='CEP'>CEP</div>
+                        <div className='LOG'>LOGRADOURO</div>  
+                        <div className='NUM'>NUMERO"CASA</div>
+                        <div className='COMPLE'>COMPLEMENTO</div>  
+                        <div className='BAIRRO'>BAIRRO</div>
+                        <div className='CDD'>CIDADE</div>  
+                        <div className='EST'>ESTADO</div>
+                        <div className='DATI'>DATAINICIO</div>  
+                        <div className='DATT'>DATATERMINO</div>
+                        <div className='TELE'>TELEFONE</div>  
+                        <div className='EMAIL'>EMAIL</div>
+                        <div className='DESC'>DESCRIÇÃO</div>
+                        <div className='button-home'>
+               <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
             </div>
+                    </div>
+                    
+                )}
+            
         </div>
     )
     

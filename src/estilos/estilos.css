@@ -64,16 +64,186 @@ a{
 }
 
 .feeds{
+
+    box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.416);
     display: flex;
-    padding: 100px;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    display: flex;
+    padding: 10px;
     margin: 20px;
     border: 1px solid;
     border-radius: 10px;
-    align-items: center;
+    align-items: end;
     background-color: rgb(89, 180, 255);
-    width: 330px;
-    height: 200px;
+    width: 500px;
+    height: 400px;
 }
+
+.box-conteiner{
+    box-sizing: border-box;
+    width: 100px;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+
+/*  Home css  */
+
+.nome-empresa-nmst{
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 200px;
+    margin-left: 20px;
+    border:solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+
+.data-i{
+    width: 100px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+
+.data-t{
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+
+.button-home{
+    margin-left: 400px;
+
+}
+
+.buttom{
+    background-color: rgb(6, 47, 83);
+    border:solid 2px rgb(33, 73, 107);
+    color:white;
+}
+
+
+/* MOSTRANDO INFO */
+
+/* .IMG{
+    width: 100px;
+    height: 100px;
+    border:solid 2px;
+    border-radius: 5px;
+    color:white;
+} */
+
+.NOME{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+
+}
+
+.CEP{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+
+.LOG{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.NUM{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.COMPLE{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.BAIRRO{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.CDD{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.EST{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.DATI{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.DATT{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.TELE{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.EMAIL{
+    margin: 2px;
+    width: 200px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+.DESC{
+    margin: 2px;
+    width: 300px;
+    height: 80px;
+    border: solid 2px;
+    border-radius: 5px;
+    color:white;
+}
+
+
 
 /* DETALHAMENTO */
 .teste{
@@ -275,29 +445,3 @@ a{
     margin-left:auto;
 }
 
-/*  Home css  */
-
-.nome-empresa-nmst{
-    border:solid 2px;
-    border-radius: 5px;
-    color:white;
-}
-
-.data-i{
-    border: solid 2px;
-    border-radius: 5px;
-    color:white;
-}
-
-.data-t{
-    border: solid 2px;
-    border-radius: 5px;
-    color:white;
-}
-
-.button-home{
-    background-color: rgb(6, 47, 83);
-    border:solid 2px rgb(33, 73, 107);
-    color:white;
-    
-}
