@@ -4,6 +4,7 @@ import NotFound from './componentes/pages/notFound';
 import FormularioColeta from './componentes/pages/formularioColeta';
 import Pedidos from './componentes/pages/Pedidos';
 import LogAdm from './componentes/pages/logAdm';
+import { UsuarioLogadoProvider } from './componentes/contexts/contextAuth';
 
 
 
@@ -14,14 +15,15 @@ import LogAdm from './componentes/pages/logAdm';
 function App() {
   return (
     <div >
+      <UsuarioLogadoProvider>
       <Routes>
         <Route path='/'element={<Home />} />
-        {/* <Route path='/detalhamento' element={<Detalhamento />} /> */}
         <Route path='/pedidos'element={<Pedidos />} />
         <Route path='/formulariocoleta'element={<FormularioColeta />} />
         <Route path='/logdev'element={<LogAdm />} />
         <Route path="*" element={< NotFound />} />
       </Routes>
+      </UsuarioLogadoProvider>
     </div >
   );
 }
