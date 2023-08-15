@@ -40,15 +40,28 @@ function PontoColeta({dados} : Props, chave:number){
         <div key={chave} className='feeds'>
               {Show && (
                 <div>
-                    <div className='box-container'>
-                        <div className='nome-empresa-nmst'>
-                            <p>nome entidade</p>
+                    <div className='box-container'>      
+                        <img className='home-card-img' src="" />                         
+                        <div className='Img'
+                            style={{                                
+                                backgroundImage: "url(" + "https://lh3.googleusercontent.com/p/AF1QipPtyqWZ3CHr4YHtY5QUfxy8vO67wyXNxlPRyA05=s680-w680-h510" + ")",
+                                backgroundPosition: 'center',
+                                backgroundSize: 'cover',
+                                backgroundRepeat: 'no-repeat',
+                                }}>                            
                         </div>
-                        <div className='data-i'>
-                            <p>data Inicio</p>   
-                        </div>
-                        <div className='data-t'>
-                            <p>data Termino</p>
+                        <div className='trent'>
+                            <tbody>
+                                <tr>
+                                    <td>ENTIDADE:</td>
+                                </tr>
+                                <tr>
+                                    <td> DATA DE INÍCIO:</td>
+                                </tr>                                                                      
+                                <tr>
+                                    <td>DATA DE TÉRMINO:</td>
+                                </tr>                                   
+                            </tbody>
                         </div>
                     </div>
                     <div className='button-home'>
@@ -58,20 +71,57 @@ function PontoColeta({dados} : Props, chave:number){
               )}
                 {!Show && (
                     <div className='box-container'>
-                        {/* <div className='IMG'>IMG</div> */}
-                        <div className='NOME'>NOME</div>  
-                        <div className='CEP'>CEP</div>
-                        <div className='LOG'>LOGRADOURO</div>  
-                        <div className='NUM'>NUMERO"CASA</div>
-                        <div className='COMPLE'>COMPLEMENTO</div>  
-                        <div className='BAIRRO'>BAIRRO</div>
-                        <div className='CDD'>CIDADE</div>  
-                        <div className='EST'>ESTADO</div>
-                        <div className='DATI'>DATAINICIO</div>  
-                        <div className='DATT'>DATATERMINO</div>
-                        <div className='TELE'>TELEFONE</div>  
-                        <div className='EMAIL'>EMAIL</div>
-                        <div className='DESC'>DESCRIÇÃO</div>
+                         <div className='Img'
+                         style={{                                
+                            backgroundImage: "url(" + "https://lh3.googleusercontent.com/p/AF1QipPtyqWZ3CHr4YHtY5QUfxy8vO67wyXNxlPRyA05=s680-w680-h510" + ")",
+                            backgroundPosition: 'center',
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat',
+                            }}>                            
+                            </div>
+                     
+                        <div className='tabelahome'>
+                            <tbody>
+                                <tr>
+                                    <td>Nome:</td>
+                                    <td>Cep:</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Lougradouro:</td>
+                                    <td>Numero:</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Complemento:</td>
+                                    <td>Bairro:</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Cidade:</td>
+                                    <td>Estado:</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Data Inicio:</td>
+                                    <td>Data termino:</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Telefone:</td>
+                                    <td>Email:</td>
+                                </tr>
+                                <tr>
+                                    
+                                    
+
+                                </tr>
+                            </tbody>
+                            <div className='desc'>
+                                        Descrição:
+                                        
+                            </div>
+                        </div>
                         <div className='button-home'>
                             <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
                         </div>

@@ -25,11 +25,11 @@ const LogAdm = () => {
   const handleEnter = async () => {
     let json = await api.logadm(username, password);
     
-    if(json.userId){
-      alert('Bem vindo ' + username );
-      UsuarioLogadoCtx?.setName(username);
-      navigator('/');
-    }else{
+        if(json.userId){
+          alert('Bem vindo ' + username );
+          UsuarioLogadoCtx?.setName(username);
+          navigator('/');
+        }else{
       alert('Usuario ou senha nao encontrado');
     }
 
