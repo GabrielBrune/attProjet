@@ -52,8 +52,8 @@ function PontoColeta({dados} : Props, chave:number){
                         </div>
                     </div>
                     <div className='button-home'>
-               <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
-            </div>
+                        <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
+                    </div>
                 </div>
               )}
                 {!Show && (
@@ -73,8 +73,8 @@ function PontoColeta({dados} : Props, chave:number){
                         <div className='EMAIL'>EMAIL</div>
                         <div className='DESC'>DESCRIÇÃO</div>
                         <div className='button-home'>
-               <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
-            </div>
+                            <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
+                        </div>
                     </div>
                     
                 )}

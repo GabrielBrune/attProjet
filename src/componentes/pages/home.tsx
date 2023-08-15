@@ -3,7 +3,7 @@ import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
 import PontoColeta from '../pontocoleta';
 import { tpPontos } from '../types/pontos';
-import { api } from '../../api';
+// import { api } from '../api';
 
 function Home(){
 

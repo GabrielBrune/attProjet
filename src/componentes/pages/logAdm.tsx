@@ -1,16 +1,22 @@
-import { useState, ChangeEvent } from 'react';
+import { useState, ChangeEvent, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { api } from '../../api';
 import Cabecalho from '../cabecalho';
+import { UsuarioLogadoContext } from '../contexts/contextAuth';
+
 
 const LogAdm = () => {
+  const UsuarioLogadoCtx = useContext (UsuarioLogadoContext)
+
   const navigator = useNavigate();
+
   const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
 
   const handleUsernameChange = (e: ChangeEvent<HTMLInputElement>) => {
     setUsername(e.target.value);
   };
+
+  const [password, setPassword] = useState('');
 
   const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);
@@ -20,7 +26,8 @@ const LogAdm = () => {
     let json = await api.logadm(username, password);
     
     if(json.userId){
-      alert('Bem vindo' + '\n' + username );
+      alert('Bem vindo ' + username );
+      UsuarioLogadoCtx?.setName(username);
       navigator('/');
     }else{
       alert('Usuario ou senha nao encontrado');

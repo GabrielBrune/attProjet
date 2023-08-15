@@ -1,4 +1,3 @@
-import '../../estilos/estilos.css'
 
 function NotFound(){
     return(

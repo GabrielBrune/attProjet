@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
-import { tpPontos } from '../types/pontos';
+import '../../estilos/estilos.css'
 import ListPedidos from '../ListPedidos';
+import { tpPontos } from '../types/pontos';
 
 function Pedidos(){
     const [ListPonto, setPontos ] = useState <tpPontos[]>([]);
