@@ -37,9 +37,6 @@ const LogAdm = () => {
 
   return (
     <div>
-        <div>
-            <Cabecalho/>
-        </div>
           <div className='background-Log'>
             <div className='box-conteiner-log'>
               <div>              
