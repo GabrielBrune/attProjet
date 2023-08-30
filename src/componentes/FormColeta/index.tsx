@@ -4,6 +4,7 @@ import Cabecalho from '../cabecalho';
 
 type Props = {
     onAdd: (
+        Img:string,
         nome: string,
         cep: string,
         logradouro: string,
@@ -24,12 +25,13 @@ type Props = {
 function FormularioColeta({ onAdd }: Props) {
 
     function handleAddClick() {
-        if (Nome && Cep && Logradouro && Numero
+        if (Img && Nome && Cep && Logradouro && Numero
             && Complemento && Bairro && Cidade &&
             Estado && DataInicio && DataTermino &&
             Descricao && Telefone && Email) {
 
             onAdd(
+                Img,
                 Nome,
                 Cep,
                 Logradouro,
@@ -48,10 +50,10 @@ function FormularioColeta({ onAdd }: Props) {
         }
     }
 
-    // const [Img, setImg] = useState('')
-    // const handleImgAdd = (e: ChangeEvent<HTMLInputElement>) => (
-    //     setImg(e.target.value)
-    // )
+    const [Img, setImg] = useState('')
+    const handleImgAdd = (e: ChangeEvent<HTMLInputElement>) => (
+        setImg(e.target.value)
+    )
 
     const [Bairro, setBairro] = useState('')
     const handleBairroAdd = (e: ChangeEvent<HTMLInputElement>) => (
@@ -131,6 +133,12 @@ function FormularioColeta({ onAdd }: Props) {
                         <h2>Insira as informações</h2>
                     </div>
                     <div className='box-input'>
+                    <input className='cssForm'
+                        value={Img}
+                        type='text'
+                        placeholder="Digite a Url da entidade"
+                        onChange={handleImgAdd}
+                    />
                     <input className='cssForm'
                         value={Nome}
                         type='text'

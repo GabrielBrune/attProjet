@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
+import { api } from '../../api';
 import '../../estilos/estilos.css'
 import Cabecalho from '../cabecalho';
 import PontoColeta from '../pontocoleta';
 import { tpPontos } from '../types/pontos';
-// import { api } from '../api';
+
 
 function Home(){
 
@@ -14,15 +15,8 @@ function Home(){
     })
 const carregarPontos = async () =>{
    try{
-        //  let json = await api.renderHome();
-        //  const dataArray = Array.isArray(json)? json : [json];
-
-        let response = await fetch('https://jsonplaceholder.typicode.com/todos/');
-        
-        let json = await response.json();
-
-        const dataArray = Array.isArray(json)? json : [json];
-        
+          let json = await api.renderHome();
+          const dataArray = Array.isArray(json)? json : [json];
         setPontos(dataArray);
     } catch (e){
         alert('Falha no carregamento das informação');

@@ -18,6 +18,7 @@ function TelaForm() {
     }
 
     const handleInserir = async (
+        img:string,
         nome: string, 
         cep: string, 
         logradouro: string,
@@ -34,6 +35,7 @@ function TelaForm() {
 
 
         let json = await api.addPoint(
+                img,
                 nome, 
                 cep, 
                 logradouro, 
@@ -50,10 +52,10 @@ function TelaForm() {
             );
 
         if (json.id) {
-            alert('Post Adicionado com sucesso!')
+            alert('Ponto Adicionado com sucesso!')
             setPontos((pontos) => [...pontos, json]);
         } else {
-            alert('Ocorreu alguma falha no post do ponto!')
+            alert('Ocorreu alguma falha no cadastro do ponto!\n\nErro: '+json.message)
         }
     }
 

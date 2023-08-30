@@ -17,14 +17,14 @@ export const api={
 
 
     listPointID: async () =>{
-        let response = await fetch('http://localhost:3010/pontos/detalhamento/');
+        let response = await fetch('http://localhost:3010/pontos');
         
         let json = await response.json();
         return json;
     },
     
     addPoint: async(
-
+        img:string,
         nome:string, 
         cep:string, 
         logradouro:string,
@@ -39,24 +39,26 @@ export const api={
         telefone:string, 
         email:string) =>{
 
-        let response = await fetch('http://localhost:3010/pontos/formulario',{
+        let response = await fetch('http://localhost:3010/pontos/formcoleta',{
                                     method:'POST',
                                     body:JSON.stringify
                                     ({
-                                        nome: nome, 
-                                        cep: cep, 
-                                        logradouro: logradouro, 
-                                        numero: numero,
-                                        complemento: complemento, 
-                                        bairro: bairro,
-                                        cidade: cidade, 
-                                        estado: estado,
-                                        dataInicio: dataInicio, 
-                                        dataTermino: dataTermino, 
-                                        descricao: descricao,
-                                        telefone: telefone, 
-                                        email: email
-                                }),
+                                        IMG: img,
+                                        DATA_INICIO: dataInicio,
+                                        DATA_TERMINO: dataTermino,
+                                        DESCRICAO: descricao,
+                                         ENTIDADES:{NOME: nome,
+                                                     LOGRADOURO: logradouro,
+                                                     CEP: cep,
+                                                     NUMERO: numero,
+                                                     COMPLEMENTO: complemento,
+                                                     BAIRRO: bairro,
+                                                     CIDADE: cidade,
+                                                     ESTADO: estado,
+                                                     TELEFONE: telefone,
+                                                     EMAIL: email,
+                                        }
+                                     }),
                             headers:{'Content-Type': 'application/json'}});
             let json = await response.json();
         return json;
