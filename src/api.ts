@@ -10,7 +10,6 @@ export const api={
 
     renderHome: async () =>{
         let response = await fetch('http://localhost:3010/pontos');
-        
         let json = await response.json();
         return json;
     },
