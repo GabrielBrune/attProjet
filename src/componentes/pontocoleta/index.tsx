@@ -1,30 +1,16 @@
 import { useState } from 'react'
 import '../../estilos/estilos.css'
+import { tpPontos } from '../types/pontos'
 
 
 type Props={
-    dados:{
-        img:string,
-        nome:string, 
-        cep:string, 
-        logradouro:string,
-        numero:string, 
-        complemento:string, 
-        bairro:string,
-        cidade:string, 
-        estado:string, 
-        dataInicio:string,
-        dataTermino:string, 
-        pontoRef:string, 
-        descricao:string,
-        telefone:string, 
-        email:string
-    },
-    chave:number
+    dados:tpPontos,
+    index:number
     
 }
 
-function PontoColeta({dados} : Props, chave:number){
+function PontoColeta({dados} : Props, index:Props){
+
     const [Show, setShow] = useState(true)
 
     function Mostrartodos(){
@@ -37,11 +23,10 @@ function PontoColeta({dados} : Props, chave:number){
 
 
     return(
-        <div key={chave} className='feeds'>
+        <div key={index.index} className='feeds'>
               {Show && (
                 <div>
-                    <div className='box-container'>      
-                        <img className='home-card-img' src="" />                         
+                    <div className='box-container'>                 
                         <div className='Img'
                             style={{                                
                                 backgroundImage: "url(" + "https://lh3.googleusercontent.com/p/AF1QipPtyqWZ3CHr4YHtY5QUfxy8vO67wyXNxlPRyA05=s680-w680-h510" + ")",
@@ -53,13 +38,13 @@ function PontoColeta({dados} : Props, chave:number){
                         <div className='trent'>
                             <tbody>
                                 <tr>
-                                    <td>ENTIDADE:</td>
+                                    <td>ENTIDADE: {dados.entidade}</td>
                                 </tr>
                                 <tr>
-                                    <td> DATA DE INÍCIO:</td>
+                                    <td> DATA DE INÍCIO: {dados.dataInicio}</td>
                                 </tr>                                                                      
                                 <tr>
-                                    <td>DATA DE TÉRMINO:</td>
+                                    <td>DATA DE TÉRMINO: {dados.dataTermino}</td>
                                 </tr>                                   
                             </tbody>
                         </div>
@@ -83,33 +68,33 @@ function PontoColeta({dados} : Props, chave:number){
                         <div className='tabelahome'>
                             <tbody>
                                 <tr>
-                                    <td>Nome:</td>
-                                    <td>CEP:</td>
+                                    <td>Nome: {dados.entidade}</td>
+                                    <td>Cep: {dados.cep}</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Lougradouro:</td>
-                                    <td>Número:</td>
+                                    <td>Lougradouro: {dados.logradouro}</td>
+                                    <td>Numero: {dados.numero}</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Complemento:</td>
-                                    <td>Bairro:</td>
+                                    <td>Complemento: {dados.complemento}</td>
+                                    <td>Bairro: {dados.bairro}</td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Cidade:</td>
-                                    <td>Estado:</td>
+                                    <td>Cidade: {dados.cidade}</td>
+                                    <td>Estado: {dados.estado}</td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Data Início:</td>
-                                    <td>Data Término:</td>
+                                    <td>Data Inicio: {dados.dataInicio}</td>
+                                    <td>Data termino: {dados.dataTermino}</td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Telefone:</td>
-                                    <td>Email:</td>
+                                    <td>Telefone: {dados.telefone}</td>
+                                    <td>Email: {dados.email}</td>
                                 </tr>
                                 <tr>
                                     
@@ -118,7 +103,7 @@ function PontoColeta({dados} : Props, chave:number){
                                 </tr>
                             </tbody>
                             <div className='desc'>
-                                        Descrição:
+                                        Descrição: {dados.descricao}
                                         
                             </div>
                         </div>

@@ -8,21 +8,13 @@ import { tpPontos } from '../types/pontos';
 
 function Home(){
 
-    const[Pontos, setPontos] = useState<tpPontos[]>([]);
+    const[pontos, setPontos] = useState<tpPontos[]>([]);
 
-    useEffect(()=>{
-        carregarPontos();
-    })
 const carregarPontos = async () =>{
-   try{
+   
           let json = await api.renderHome();
           const dataArray = Array.isArray(json)? json : [json];
         setPontos(dataArray);
-    } catch (e){
-        alert('Falha no carregamento das informações');
-        console.error(e);
-    }
-
 }
 
     return(
@@ -32,12 +24,13 @@ const carregarPontos = async () =>{
             </div>
     
             <div className='corpPag'>
+                <button onClick={carregarPontos}>carregarPontos</button>
 
                 <div className='bodyhome'>
-                        {Pontos.map((item, index) =>(
+                        {pontos.map((item, index) =>(
                             
-                            <div>
-                                <PontoColeta chave={index} dados={item} />
+                            <div key={index}>
+                                <PontoColeta index={index} dados={item} />
                             </div>
 
                         ))}

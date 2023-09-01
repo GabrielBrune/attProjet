@@ -1,6 +1,6 @@
 export type tpPontos = {
     img:string,
-    nome:string, 
+    entidade:string, 
     cep:string, 
     logradouro:string,
     numero:string, 
@@ -10,7 +10,6 @@ export type tpPontos = {
     estado:string, 
     dataInicio:string,
     dataTermino:string, 
-    pontoRef:string, 
     descricao:string,
     telefone:string, 
     email:string
