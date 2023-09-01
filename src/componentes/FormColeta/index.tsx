@@ -130,26 +130,26 @@ function FormularioColeta({ onAdd }: Props) {
                 
                 <div className='box-conteiner-form'>
                     <div className='top'>
-                        <h2>Insira as informações</h2>
+                        <h2>Insira as Informações</h2>
                     </div>
                     <div className='box-input'>
                     <input className='cssForm'
                         value={Img}
                         type='text'
-                        placeholder="Digite a Url da entidade"
+                        placeholder="Digite a URL da entidade"
                         onChange={handleImgAdd}
                     />
                     <input className='cssForm'
                         value={Nome}
                         type='text'
-                        placeholder="Digite o Nome da entidade"
+                        placeholder="Digite o nome da entidade"
                         onChange={handleNomeAdd}
                     />
                     <br />
                     <input className='cssForm'
                         value={Cep}
                         type='text'
-                        placeholder="Digite o cep"
+                        placeholder="Digite o CEP"
                         onChange={handleCepAdd}
                     />
                     <br />
@@ -163,7 +163,7 @@ function FormularioColeta({ onAdd }: Props) {
                     <input className='cssForm'
                         value={Numero}
                         type='text'
-                        placeholder="Digite o numero"
+                        placeholder="Digite o nÚmero"
                         onChange={handleNumeroAdd}
                     />
                     <br />
@@ -194,7 +194,7 @@ function FormularioColeta({ onAdd }: Props) {
                     <input className='cssForm'
                         value={Estado}
                         type='text'
-                        placeholder="Digite o Estado"
+                        placeholder="Digite o estado"
                         onChange={handleEstadoAdd}
                     />
 
@@ -210,13 +210,13 @@ function FormularioColeta({ onAdd }: Props) {
                     <input className='cssForm'
                         value={Email}
                         type='text'
-                        placeholder="Digite o Email"
+                        placeholder="Digite o email"
                         onChange={handleEmailAdd}
                     />
 
                    <br />
                     <input className='cssForm'
-                        placeholder='Data de inicio'
+                        placeholder='Data de início'
                         value={DataInicio}
                         type='text'
                         onChange={handleDataInicioAdd}
@@ -224,7 +224,7 @@ function FormularioColeta({ onAdd }: Props) {
 
                     <br />
                     <input className='cssForm'
-                        placeholder='Data de termino'
+                        placeholder='Data de término'
                         value={DataTermino}
                         type='text'
                         onChange={handleDataTerminoAdd}

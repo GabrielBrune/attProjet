@@ -52,7 +52,7 @@ function TelaForm() {
             );
 
         if (json.id) {
-            alert('Ponto Adicionado com sucesso!')
+            alert('Ponto Adicionado com Sucesso!')
             setPontos((pontos) => [...pontos, json]);
         } else {
             alert('Ocorreu alguma falha no cadastro do ponto!\n\nErro: '+json.message)
@@ -65,11 +65,11 @@ function TelaForm() {
                 <>
                 <div className="Autorização">
                     <div className="message_neg">
-                        Acesso negado para esta pagina.<br />
-                        Para acessa-la efetue o login de administrador.
+                        Acesso negado para esta página.<br />
+                        Para acessá-la efetue o login de administrador.
                     </div>
                     <div>
-                        <button onClick={HandleDirection} className='message_neg'>Click Aqui</button>
+                        <button onClick={HandleDirection} className='message_neg'>Clique Aqui</button>
                     </div>
 
                 </div>

@@ -19,7 +19,7 @@ const carregarPontos = async () =>{
           const dataArray = Array.isArray(json)? json : [json];
         setPontos(dataArray);
     } catch (e){
-        alert('Falha no carregamento das informação');
+        alert('Falha no carregamento das informações');
         console.error(e);
     }
 

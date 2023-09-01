@@ -84,12 +84,12 @@ function PontoColeta({dados} : Props, chave:number){
                             <tbody>
                                 <tr>
                                     <td>Nome:</td>
-                                    <td>Cep:</td>
+                                    <td>CEP:</td>
                                 </tr>
 
                                 <tr>
                                     <td>Lougradouro:</td>
-                                    <td>Numero:</td>
+                                    <td>Número:</td>
                                 </tr>
 
                                 <tr>
@@ -103,8 +103,8 @@ function PontoColeta({dados} : Props, chave:number){
                                 </tr>
                                 
                                 <tr>
-                                    <td>Data Inicio:</td>
-                                    <td>Data termino:</td>
+                                    <td>Data Início:</td>
+                                    <td>Data Término:</td>
                                 </tr>
                                 
                                 <tr>
@@ -125,13 +125,10 @@ function PontoColeta({dados} : Props, chave:number){
                         <div className='button-home'>
                             <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
                         </div>
-                    </div>
-                    
+                    </div>    
                 )}
-            
         </div>
     )
-    
 }
 
 export default PontoColeta;

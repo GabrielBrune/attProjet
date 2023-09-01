@@ -29,7 +29,7 @@ const LogAdm = () => {
           UsuarioLogadoCtx?.setName(username);
           navigator('/');
         }else{
-      alert('Usuario ou senha nao encontrado');
+      alert('Usuário ou senha não encontrado');
     }
 
   }
