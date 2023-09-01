@@ -11,6 +11,7 @@ function Cabecalho(){
                 <Menu 
                 item1='Home'
                 item2='Cadastrar Pontos'
+                item3='Sobre'
                 />
             </div>
     )
