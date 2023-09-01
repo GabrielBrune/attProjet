@@ -3,9 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 type Props={
-    item3:String;
     item1:String;
     item2:String;
+    item3:String;
 }
 
 function Menu(item:Props){
