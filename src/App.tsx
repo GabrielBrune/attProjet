@@ -5,6 +5,7 @@ import FormularioColeta from './componentes/pages/formularioColeta';
 import Pedidos from './componentes/pages/Pedidos';
 import LogAdm from './componentes/pages/logAdm';
 import { UsuarioLogadoProvider } from './componentes/contexts/contextAuth';
+import Sobre from './componentes/Sobre/sobre';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/formulariocoleta'element={<FormularioColeta />} />
         <Route path='/logdev'element={<LogAdm />} />
         <Route path="*" element={< NotFound />} />
+        <Route path='/sobre' element={< Sobre />}/>
       </Routes>
       </UsuarioLogadoProvider>
     </div >

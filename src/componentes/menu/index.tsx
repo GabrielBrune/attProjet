@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 type Props={
+    item3:String;
     item1:String;
     item2:String;
 }
@@ -16,12 +17,15 @@ function Menu(item:Props){
     function handleClicknavCad(){
         navHome('/formulariocoleta')
     }
-
+    const cyber = useNavigate();
+    function handleClickCyber(){
+        cyber('/sobre')
+    }
     return(
         <div className='menuPai'>
             <button className='linkMenu' onClick={handleClicknavHome}>{item.item1}</button>
             <button className='linkMenu' onClick={handleClicknavCad} >{item.item2}</button>  
-            
+            <button className='linkMenu' onClick={handleClickCyber}  >{item.item3}</button>
         </div>
      
     )
