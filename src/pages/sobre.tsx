@@ -1,4 +1,4 @@
-import Cabecalho from "../cabecalho";
+import Cabecalho from "../componentes/cabecalho";
 
 
 function Sobre() {
