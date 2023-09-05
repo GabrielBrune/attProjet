@@ -26,14 +26,14 @@ function Home(){
             <div className='corpPag'>
                 <button onClick={carregarPontos}>carregarPontos</button>
 
-                <div className='bodyhome'>
-                        {pontos.map((item, index) =>(
-                            
-                            <div key={index}>
-                                <PontoColeta index={index} dados={item} />      
-                            </div>
+                <div>
+                    {pontos.map((item, index) =>(
+                        
+                        <div key={index}>
+                            <PontoColeta index={index} dados={item} />      
+                        </div>
 
-                        ))}
+                    ))}
                 </div>
 
             </div>
