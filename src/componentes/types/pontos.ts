@@ -1,4 +1,5 @@
 export type tpPontos = {
+    id:string,
     img:string,
     entidade:string, 
     cep:string, 

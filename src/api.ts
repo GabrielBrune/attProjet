@@ -13,14 +13,6 @@ export const api={
         let json = await response.json();
         return json;
     },
-
-
-    listPointID: async () =>{
-        let response = await fetch('http://localhost:3010/pontos');
-        
-        let json = await response.json();
-        return json;
-    },
     
     addPoint: async(
         img:string,
@@ -71,7 +63,7 @@ export const api={
     },
 
     removePoint: async (id:string) =>{
-        let response = await fetch('http://localhost:3000/pontos'+id, {method:'DELETE'});
+        let response = await fetch('http://localhost:3010/pontos/'+id, {method:'DELETE'});
         
         let json = await response.json();
         return json;

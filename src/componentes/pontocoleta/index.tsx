@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import '../../estilos/estilos.css'
 import { tpPontos } from '../types/pontos'
+import { UsuarioLogadoContext } from '../contexts/contextAuth'
 
 
 type Props={
@@ -10,6 +11,7 @@ type Props={
 }
 
 function PontoColeta({dados} : Props, index:Props){
+    const UseramdLogado = useContext(UsuarioLogadoContext)
 
     const [Show, setShow] = useState(true)
 
@@ -24,36 +26,39 @@ function PontoColeta({dados} : Props, index:Props){
 
     return(
         <div key={index.index} className='feeds'>
-              {Show && (
-                <div>
-                    <div className='box-container'>                 
-                        <div className='Img'
-                            style={{                                
-                                backgroundImage: "url(" + "https://lh3.googleusercontent.com/p/AF1QipPtyqWZ3CHr4YHtY5QUfxy8vO67wyXNxlPRyA05=s680-w680-h510" + ")",
-                                backgroundPosition: 'center',
-                                backgroundSize: 'cover',
-                                backgroundRepeat: 'no-repeat',
-                                }}>                            
+            {Show && (
+                    <div>
+                        <div className='box-container'>                 
+                            <div className='Img'
+                                style={{                                
+                                    backgroundImage: "url(" + "https://lh3.googleusercontent.com/p/AF1QipPtyqWZ3CHr4YHtY5QUfxy8vO67wyXNxlPRyA05=s680-w680-h510" + ")",
+                                    backgroundPosition: 'center',
+                                    backgroundSize: 'cover',
+                                    backgroundRepeat: 'no-repeat',
+                                    }}>                            
+                            </div>
+                            <div className='trent'>
+                                <tbody>
+                                    <tr>
+                                        <td>ENTIDADE: {dados.entidade}</td>
+                                    </tr>
+                                    <tr>
+                                        <td> DATA DE INÍCIO: {dados.dataInicio}</td>
+                                    </tr>                                                                      
+                                    <tr>
+                                        <td>DATA DE TÉRMINO: {dados.dataTermino}</td>
+                                    </tr>                                   
+                                </tbody>
+                            </div>
                         </div>
-                        <div className='trent'>
-                            <tbody>
-                                <tr>
-                                    <td>ENTIDADE: {dados.entidade}</td>
-                                </tr>
-                                <tr>
-                                    <td> DATA DE INÍCIO: {dados.dataInicio}</td>
-                                </tr>                                                                      
-                                <tr>
-                                    <td>DATA DE TÉRMINO: {dados.dataTermino}</td>
-                                </tr>                                   
-                            </tbody>
+                        
+                        <div className='button-home'>
+                            <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
                         </div>
                     </div>
-                    <div className='button-home'>
-                        <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
-                    </div>
-                </div>
-              )}
+                  )}
+            
+              
                 {!Show && (
                     <div className='box-container'>
                          <div className='Img'
@@ -107,6 +112,7 @@ function PontoColeta({dados} : Props, index:Props){
                                         
                             </div>
                         </div>
+                        
                         <div className='button-home'>
                             <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
                         </div>
