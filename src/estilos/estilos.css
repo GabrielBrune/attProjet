@@ -62,7 +62,20 @@ a{
     flex-direction: row;
     margin-top: 10px;
     flex-wrap: wrap;
-    
+    border-radius: 10px;
+    box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.416);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid;
+    border-color:  rgb(16, 64, 103);
+    margin:100px;
+    margin-left:auto;
+    margin-right:auto ;
+    padding:10px;
+    width:400px;
+    height:400px;
+    box-sizing: border-box;
 }
 
 .feeds{

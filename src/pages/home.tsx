@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useState } from 'react';
 import { api } from '../api';
 import '../estilos/estilos.css'
 import Cabecalho from '../componentes/cabecalho';
