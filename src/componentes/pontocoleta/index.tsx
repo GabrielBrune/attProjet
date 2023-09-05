@@ -45,7 +45,7 @@ function PontoColeta({dados} : Props, index:Props){
                         <div className='box-container'>                 
                             <div className='Img'
                                 style={{                                
-                                    backgroundImage: "url(${dados.img})",
+                                    backgroundImage: `url(${dados.img})`,
                                     backgroundPosition: 'center',
                                     backgroundSize: 'cover',
                                     backgroundRepeat: 'no-repeat',
@@ -80,7 +80,7 @@ function PontoColeta({dados} : Props, index:Props){
                     <div className='box-container'>
                          <div className='Img'
                          style={{                                
-                            backgroundImage: "url(${dados.img})",
+                            backgroundImage: `url(${dados.img})`,
                             backgroundPosition: 'center',
                             backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat',
@@ -148,7 +148,7 @@ function PontoColeta({dados} : Props, index:Props){
                         <div className='box-container'>                 
                             <div className='Img'
                                 style={{                                
-                                    backgroundImage: "url(${dados.img})",
+                                    backgroundImage: `url(${dados.img})`,
                                     backgroundPosition: 'center',
                                     backgroundSize: 'cover',
                                     backgroundRepeat: 'no-repeat',
@@ -179,7 +179,7 @@ function PontoColeta({dados} : Props, index:Props){
                     <div className='box-container'>
                          <div className='Img'
                          style={{                                
-                            backgroundImage: "url(${dados.img})",
+                            backgroundImage: `url(${dados.img})`,
                             backgroundPosition: 'center',
                             backgroundSize: 'cover',
                             backgroundRepeat: 'no-repeat',
