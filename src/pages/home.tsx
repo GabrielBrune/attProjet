@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { api } from '../../api';
-import '../../estilos/estilos.css'
-import Cabecalho from '../cabecalho';
-import PontoColeta from '../pontocoleta';
-import { tpPontos } from '../types/pontos';
+import { api } from '../api';
+import '../estilos/estilos.css'
+import Cabecalho from '../componentes/cabecalho';
+import PontoColeta from '../componentes/pontocoleta';
+import { tpPontos } from '../componentes/types/pontos';
 
 
 function Home(){

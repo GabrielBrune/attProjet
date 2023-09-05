@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { api } from "../../api";
-import { UsuarioLogadoContext } from "../contexts/contextAuth";
-import FormularioColeta from "../FormColeta";
-import { tpPontos } from '../types/pontos';
+import { api } from "../api";
+import { UsuarioLogadoContext } from "../componentes/contexts/contextAuth";
+import FormularioColeta from "../componentes/FormColeta";
+import { tpPontos } from '../componentes/types/pontos';
 
 
 function TelaForm() {

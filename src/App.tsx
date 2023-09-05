@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from "./componentes/pages/home";
-import NotFound from './componentes/pages/notFound';
-import FormularioColeta from './componentes/pages/formularioColeta';
-import LogAdm from './componentes/pages/logAdm';
+import Home from "./pages/home";
+import NotFound from './pages/notFound';
+import FormularioColeta from './pages/formularioColeta';
+import LogAdm from './pages/logAdm';
 import { UsuarioLogadoProvider } from './componentes/contexts/contextAuth';
-import Sobre from './componentes/pages/sobre';
+import Sobre from './pages/sobre';
 
 
 
