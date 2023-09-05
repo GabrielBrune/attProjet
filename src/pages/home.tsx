@@ -14,7 +14,8 @@ function Home(){
     const {id} = useParams()
 
     const ExcluirPonto = async () =>{
-        let response = await api.removePoint()
+        let response = await api.removePoint
+        
     }
 
     const carregarPontos = async () =>{
