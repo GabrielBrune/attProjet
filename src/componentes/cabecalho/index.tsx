@@ -8,7 +8,7 @@ function Cabecalho(){
 
     return(
             <div className='cabPai' >
-                <Menu 
+                <Menu
                 item1='Home'
                 item2='Cadastrar Pontos'
                 item3='Sobre'
