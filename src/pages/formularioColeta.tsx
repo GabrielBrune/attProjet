@@ -10,7 +10,7 @@ function TelaForm() {
     const [pontos, setPontos] = useState<tpPontos[]>([])
 
     const UsuarioAdmLog = useContext(UsuarioLogadoContext);
-    ////
+
     const navigation = useNavigate();
 
     function HandleDirection(){

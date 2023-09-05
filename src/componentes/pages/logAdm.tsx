@@ -1,7 +1,8 @@
 import { useState, ChangeEvent, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { api } from '../api';
-import { UsuarioLogadoContext } from '../componentes/contexts/contextAuth';
+import { api } from '../../api';
+import { UsuarioLogadoContext } from '../contexts/contextAuth';
+import React from 'react';
 
 
 const LogAdm = () => {
@@ -39,7 +40,7 @@ const LogAdm = () => {
     <div>
           <div className='background-Log'>
             <div className='box-conteiner-log'>
-              <div>              
+              <div>          
               <div className='paddinglog'>
                   <h2>Acesso restrito</h2>
                   <input className='Adm'
