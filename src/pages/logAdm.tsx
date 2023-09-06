@@ -39,7 +39,16 @@ const LogAdm = () => {
     <div>
           <div className='background-Log'>
             <div className='box-conteiner-log'>
-              <div>              
+              <div>       
+              <div
+          style={{
+            backgroundImage: `url('/Logo_branca.png')`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+          className="divLogo"
+      ></div>       
               <div className='paddinglog'>
                   <h2>Acesso restrito</h2>
                   <input className='Adm'
