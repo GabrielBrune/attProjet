@@ -2,14 +2,14 @@
 
 export const api={
     listPointName: async (nome:string) =>{
-        let response = await fetch('http://localhost:3010/pontos/'+nome);
+        let response = await fetch('https://gbrune-api-projeto.onrender.com/pontos/'+nome);
         
         let json = await response.json();
         return json;
     },
 
     renderHome: async () =>{
-        let response = await fetch('http://localhost:3010/pontos');
+        let response = await fetch('https://gbrune-api-projeto.onrender.com/pontos');
         let json = await response.json();
         return json;
     },
@@ -30,7 +30,7 @@ export const api={
         telefone:string, 
         email:string) =>{
 
-        let response = await fetch('http://localhost:3010/pontos/formcoleta',{
+        let response = await fetch('https://gbrune-api-projeto.onrender.com/pontos/formcoleta',{
                                     method:'POST',
                                     body:JSON.stringify
                                     ({
@@ -56,14 +56,14 @@ export const api={
     },
 
     modPoint: async (id:string) =>{
-        let response = await fetch('http://localhost:3010/pontos/id'+id, {method:'PUT'});
+        let response = await fetch('https://gbrune-api-projeto.onrender.com/id'+id, {method:'PUT'});
         
         let json = await response.json();
         return json;
     },
 
     removePoint: async (id:string) =>{
-        let response = await fetch('http://localhost:3010/pontos/id'+id, {method:'DELETE'});
+        let response = await fetch('https://gbrune-api-projeto.onrender.com/pontos/id'+id, {method:'DELETE'});
         
         let json = await response.json();
         return json;
@@ -71,7 +71,7 @@ export const api={
     
     logadm:async (username:string, password:string) =>{
         {
-            let response = await fetch('http://localhost:3010/auth/login',
+            let response = await fetch('https://gbrune-api-projeto.onrender.com/auth/login',
             {
                 method:'POST',
                 body:JSON.stringify
