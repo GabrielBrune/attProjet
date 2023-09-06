@@ -3,6 +3,7 @@ import '../../estilos/estilos.css'
 import { tpPontos } from '../types/pontos'
 import { UsuarioLogadoContext } from '../contexts/contextAuth'
 import { api } from '../../api'
+import { useNavigate } from 'react-router-dom'
 
 
 type Props={
@@ -15,24 +16,34 @@ function PontoColeta({dados} : Props, index:Props){
     const UseramdLogado = useContext(UsuarioLogadoContext)
     const [Show, setShow] = useState(true)
 
+    const[pontos, setPontos] = useState<tpPontos[]>([]);
+    const carregarPontos = async () =>{
+    
+            let json = await api.renderHome();
+            const dataArray = Array.isArray(json)? json : [json];
+            setPontos(dataArray);
+    }
+
+    function handleDelete(){
+        if(dados.id){
+            ExcluirPonto(dados)
+            carregarPontos()
+        }else{
+            carregarPontos()
+        }
+    }
+
+    const ExcluirPonto = async (dados : tpPontos) =>{
+
+        let response = await api.removePoint(dados.id)
+    }
+
     function Mostrartodos(){
         if(Show){
             setShow(false)
         }else{
             setShow(true)
         }
-    }
-
-    function handleDelete(){
-        if(dados.id){
-            ExcluirPonto(dados)
-        }
-    }
-
-    
-    const ExcluirPonto = async (dados : tpPontos) =>{
-
-        let response = await api.removePoint(dados.id)
     }
 
 
@@ -65,10 +76,13 @@ function PontoColeta({dados} : Props, index:Props){
                                 </tbody>
                             </div>
                         </div>
-                        <div className='button-home'>
-                            <button onClick={handleDelete} className='buttom'>Excluir</button>
-                        </div>
-                        
+
+                       
+                            <div className='button-home'>
+                                <button onClick={handleDelete} className='buttom'>Excluir</button>
+                            </div>
+            
+
                         <div className='button-home'>
                             <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
                         </div>
@@ -130,9 +144,11 @@ function PontoColeta({dados} : Props, index:Props){
                             </div>
                         </div>
 
-                        <div className='button-home'>
-                            <button onClick={handleDelete} className='buttom'>Excluir</button>
-                        </div>
+                       
+                            <div className='button-home'>
+                                <button onClick={handleDelete} className='buttom'>Excluir</button>
+                            </div>
+                     
                         
                         <div className='button-home'>
                             <button onClick={Mostrartodos} className='buttom'>Saiba mais</button>
