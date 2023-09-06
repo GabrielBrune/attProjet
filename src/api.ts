@@ -56,15 +56,14 @@ export const api={
     },
 
     modPoint: async (id:string) =>{
-        let response = await fetch('http://localhost:3010/pontos'+id, {method:'PUT'});
+        let response = await fetch('http://localhost:3010/pontos/id'+id, {method:'PUT'});
         
         let json = await response.json();
         return json;
     },
 
     removePoint: async (id:string) =>{
-        let Response = await fetch('http://localhost:3010/pontos/')
-        let response = Response = await fetch('http://localhost:3010/pontos/'+id, {method:'DELETE'});
+        let response = await fetch('http://localhost:3010/pontos/id'+id, {method:'DELETE'});
         
         let json = await response.json();
         return json;

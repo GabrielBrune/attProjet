@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { api } from '../api';
 import '../estilos/estilos.css'
 import Cabecalho from '../componentes/cabecalho';
@@ -16,6 +16,10 @@ function Home(){
             setPontos(dataArray);
     }
 
+    useEffect(() => {
+        carregarPontos();
+    } , []);
+
     return(
         <div>
         
@@ -23,21 +27,16 @@ function Home(){
             <Cabecalho /> 
             </div>
 
-            <div className='corpPag'>
-                <button onClick={carregarPontos}>carregarPontos</button>
+            <div className='bodyhome'>
+                {pontos.map((item, index) =>(
+                    
+                    <div key={index}>
+                        <PontoColeta index={index} dados={item} />      
+                    </div>
 
-                <div>
-                    {pontos.map((item, index) =>(
-                        
-                        <div key={index}>
-                            <PontoColeta index={index} dados={item} />      
-                        </div>
-
-                    ))}
-                </div>
-
+                ))}
             </div>
-          
+        
         </div>
     )
 
