@@ -63,9 +63,10 @@ function PontoColeta({dados} : Props, index:Props){
                                     }}>                            
                             </div>
                             <div className='trent'>
+
                                 <tbody>
                                     <tr>
-                                        <td>ENTIDADE: {dados.entidade}</td>
+                                        <td> <b>ENTIDADE:</b> {dados.entidade}</td>
                                     </tr>
                                     <tr>
                                         <td> DATA DE INÍCIO: {dados.dataInicio}</td>
@@ -173,7 +174,7 @@ function PontoColeta({dados} : Props, index:Props){
                             <div className='trent'>
                                 <tbody>
                                     <tr>
-                                        <td>ENTIDADE: {dados.entidade}</td>
+                                        <td><b>ENTIDADE:</b> {dados.entidade}</td>
                                     </tr>
                                     <tr>
                                         <td> DATA DE INÍCIO: {dados.dataInicio}</td>

@@ -74,6 +74,13 @@ a{
   
 }
 
+
+.PontoColPrinc{
+    display: flex ;
+    justify-content: center;
+    flex-direction: row;
+}
+
 .feeds{
     box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.416);
     display: flex;
@@ -94,16 +101,14 @@ a{
 
 /*  css do Pontos coleta  */
 
-.box-conteiner{
+.box-container{
     box-sizing: border-box;
-    width: 100px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap ;
-    border: solid 2px;
+    border: 0px;
     border-radius: 5px;
-    color:white;
 }
 
 .nome-empresa-nmst{
@@ -179,14 +184,14 @@ td,tr{
 }
 
 .trent{
-    margin-top: 150px;
+    margin-top: 100px;
     background-color: rgb(16, 64, 103);
     color: white;
-    font-weight: bold;
+    
     border-color:  rgb(4, 35, 59);
     padding: 10px;
     border-radius: 10px;
-    width: 250px;
+    width: 400px;
     
 }
 

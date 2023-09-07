@@ -30,7 +30,7 @@ function Home(){
             <div className='bodyhome'>
                 {pontos.map((item, index) =>(
                     
-                    <div key={index}>
+                    <div className='PontoColPrinc' key={index}>
                         <PontoColeta index={index} dados={item} />      
                     </div>
 
