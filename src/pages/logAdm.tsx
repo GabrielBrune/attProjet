@@ -25,7 +25,7 @@ const LogAdm = () => {
     let json = await api.logadm(username, password);
     
         if(json.userId){
-          alert('Bem vindo ' + username );
+          alert('Bem vindo, ' + username );
           UsuarioLogadoCtx?.setName(username);
           navigator('/');
         }else{
