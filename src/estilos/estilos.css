@@ -213,7 +213,7 @@ td,tr{
 .Adm{
     height:25px;
     width:200px;
-    background-color: rgb(212, 212, 212);
+    background-color: rgba(234, 234, 234);
     align-items: center;
     align-self: center;
     text-align: center;
@@ -227,7 +227,7 @@ td,tr{
 .Adm2{
     height:25px;
     width:200px;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(234, 234, 234);
     align-items: center;
     align-self: center;
     text-align: center;
@@ -242,11 +242,13 @@ td,tr{
     width: 170px;
     margin: auto;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.875);
 }
 
 .box-conteiner-log{
     border-radius: 10px;
     box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.416);
+    background-color: rgba(255, 255, 255, 0.875);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -258,7 +260,7 @@ td,tr{
     margin-right:auto ;
     padding:10px;
     width:400px;
-    height:550px;
+    height:570px;
     box-sizing: border-box;
     
 }
@@ -268,7 +270,7 @@ td,tr{
 }
 
 .background-Log{ 
-    background-color: rgba(255, 255, 255, 0.31);
+    background-color: rgba(145, 145, 145, 0.31);
     width: 100%;
     height: 100%;
     display: flex;
@@ -400,7 +402,7 @@ td,tr{
 .Autorização{
     border-radius: 10px;
     box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.416);
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(255, 255, 255, 0.875);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -412,14 +414,14 @@ td,tr{
     margin-right:auto ;
     padding:10px;
     width:400px;
-    height:400px;
+    height:500px;
     box-sizing: border-box;
 }
 
 .message_neg{
     width:200px;
     box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.416);
-    background-color: rgb(145, 145, 145, 0.31);
+    background-color: rgb(234, 234, 234);
     align-items: center;
     align-self: center;
     text-align: center;
@@ -429,6 +431,25 @@ td,tr{
     margin-top:20px;
     padding: 10px;
     border-radius: 10px;
+}
+
+.informacoesColeta{
+    border-radius: 10px;
+    box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.416);
+    background-color: rgba(255, 255, 255, 0.875);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    border: 3px solid;
+    border-color:  rgb(16, 64, 103);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 40px;
+    padding:10px;
+    width:950px;
+    height:360px;
+    box-sizing: border-box;
 }
 
 .button_neg{
@@ -450,17 +471,17 @@ td,tr{
     background-image:-moz-linear-gradient('Senac.jpg');
 }
 
-.box-conteiner-sobre{
-    src: "Logo_branca.png";
+.sobre{
     border-radius: 10px;
     box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.416);
+    background-color: rgba(255, 255, 255, 0.875);
     display: flex;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     border: 3px solid;
     border-color:  rgb(16, 64, 103);
-    margin:100px;
+    margin-top: 40px;
     margin-left:auto;
     margin-right:auto ;
     padding:10px;
@@ -474,8 +495,22 @@ td,tr{
     padding: 40px;
 }
 
+.divSobrepai{
+    background-color: rgba(145, 145, 145, 0.31);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:66.8vh;    
+}
+
+h2{
+    padding-top: 6vmin;
+    justify-content: center;
+    align-items: center;
+}
+
 .background-sobre{ 
-   background-color: rgba(145, 145, 145, 0.31);
+    background-color: rgba(145, 145, 145, 0.31);
     width: 100%;
     height: 100%;
     display: flex;

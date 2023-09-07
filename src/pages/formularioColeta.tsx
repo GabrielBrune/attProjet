@@ -13,73 +13,85 @@ function TelaForm() {
 
     const navigation = useNavigate();
 
-    function HandleDirection(){
+    function HandleDirection() {
         navigation('/logdev');
     }
 
     const handleInserir = async (
-        img:string,
-        nome: string, 
-        cep: string, 
+        img: string,
+        nome: string,
+        cep: string,
         logradouro: string,
-        numero: string, 
-        complemento: string, 
-        bairro: string, 
-        cidade: string, 
+        numero: string,
+        complemento: string,
+        bairro: string,
+        cidade: string,
         estado: string,
-        dataInicio: string, 
-        dataTermino: string, 
+        dataInicio: string,
+        dataTermino: string,
         descricao: string,
-        telefone: string, 
+        telefone: string,
         email: string) => {
 
 
         let json = await api.addPoint(
-                img,
-                nome, 
-                cep, 
-                logradouro, 
-                numero,
-                complemento, 
-                bairro, 
-                cidade, 
-                estado,
-                dataInicio, 
-                dataTermino, 
-                descricao, 
-                telefone, 
-                email
-            );
+            img,
+            nome,
+            cep,
+            logradouro,
+            numero,
+            complemento,
+            bairro,
+            cidade,
+            estado,
+            dataInicio,
+            dataTermino,
+            descricao,
+            telefone,
+            email
+        );
 
         if (json.id) {
             alert('Ponto Adicionado com Sucesso!')
             setPontos((pontos) => [...pontos, json]);
         } else {
-            alert('Ocorreu alguma falha no cadastro do ponto!\n\nErro: '+json.message)
+            alert('Ocorreu alguma falha no cadastro do ponto!\n\nErro: ' + json.message)
         }
     }
 
     return (
         <div>
-            {(!UsuarioAdmLog?.name || UsuarioAdmLog?.name === null || UsuarioAdmLog?.name === undefined) && 
-                <>
-                <div className="Autorização">
-                    <div className="message_neg">
-                        Acesso negado para esta página.<br />
-                        Para acessá-la efetue o login de administrador.
-                    </div>
-                    <div>
-                        <button onClick={HandleDirection} className='message_neg'>Clique Aqui</button>
-                    </div>
+            {(!UsuarioAdmLog?.name || UsuarioAdmLog?.name === null || UsuarioAdmLog?.name === undefined) &&
+                <div>
+                    <div className="Autorização">
+                        <div
+                            style={{
+                                backgroundImage: `url('/Logo_branca.png')`,
+                                backgroundPosition: "center",
+                                backgroundSize: "cover",
+                                backgroundRepeat: "no-repeat",
+                            }}
+                            className="divLogo"
+                        ></div>
+                        <div className="message_neg">
+                            Acesso negado para esta página.<br />
+                            Para acessá-la efetue o login de administrador.
+                        </div>
+                        <div>
+                            <button onClick={HandleDirection} className='message_neg'>Clique Aqui</button>
+                        </div>
 
+                    </div>
+                    <div className='informacoesColeta'>
+                        <h2>Se você deseja seja cadastrado um ponto de coleta ou doação de vestimentas, roupas, sapatos, etc. Nos encaminhe um email para com as seguintes informações:</h2>
+                    </div>
                 </div>
-                </>
             }
-            
+
             {UsuarioAdmLog?.name &&
-            <>
-                <FormularioColeta onAdd={handleInserir} />
-            </>
+                <>
+                    <FormularioColeta onAdd={handleInserir} />
+                </>
             }
         </div>
     );
