@@ -83,7 +83,17 @@ function TelaForm() {
 
                     </div>
                     <div className='informacoesColeta'>
-                        <h2>Se você deseja seja cadastrado um ponto de coleta ou doação de vestimentas, roupas, sapatos, etc. Nos encaminhe um email para com as seguintes informações:</h2>
+                        <h2>Se você deseja que seja cadastrado um ponto de coleta ou doação de vestimentas, roupas, sapatos, etc. Nos encaminhe um email para o endereço ...... com as seguintes informações:</h2>
+                        <h3>Nome da entidade;<br></br></h3>
+                        <h4>A URL de uma imagem da entidade;<br></br></h4> 
+                        <h3>CEP;</h3> 
+                        <h3>Logradouro;</h3> 
+                        <h3>Número do endereço;</h3> 
+                        <h3>Complemento (caso necessário);</h3> 
+                        <h3>Nome da entidade;</h3> 
+                        <h3>Nome da entidade;</h3> 
+                        <h3>Nome da entidade;</h3> 
+                        <h3>Nome da entidade;</h3>    
                     </div>
                 </div>
             }

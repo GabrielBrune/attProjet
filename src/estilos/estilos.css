@@ -300,11 +300,15 @@ td,tr{
 
 /* FORM COLETA */
 
+.telaForm{
+    background-color: rgba(145, 145, 145, 0.31);;
+    
+}
 .cssForm{
     position: relative;
     height:15px;
     width: 200px;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(234, 234, 234);
     border-color:  rgb(89, 180, 255);
     margin-top: 15px;
     margin-left: 5px;
@@ -317,13 +321,13 @@ td,tr{
     position: relative;
     height:200px;
     width: 700px;
-    background-color: rgb(212, 212, 212);
-    border-color:  rgb(89, 180, 255);
+    background-color: rgb(234, 234, 234);
+    border-color: rgb(89, 180, 255);
     border-radius: 10px;
     margin-top: 20px;
     margin-right:60px;
     padding: 15px;
-    
+
 }
 
 .box-conteiner-form{
@@ -333,6 +337,7 @@ td,tr{
     flex-wrap: wrap ;
     border-radius: 10px;
     box-shadow: 9px 8px 20px rgba(0, 0, 0, 0.416);
+    background-color: rgba(255, 255, 255, 0.875);
     border: 3px solid;
     border-color:  rgb(16, 64, 103);
     margin:100px;
@@ -340,7 +345,7 @@ td,tr{
     margin-right:auto ;
     padding-top: 50px;
     width:800px;
-    height: 1000px;
+    height: 1100px;
     box-sizing: border-box;
 }
 .datainicioForm{
@@ -472,9 +477,17 @@ td,tr{
     height: 100%;
 
 }
+
+.telaAutorizacao{
+    background-color: rgba(145, 145, 145, 0.31);
+}
+
 .Senac.jpg{
     background-image:-moz-linear-gradient('Senac.jpg');
 }
+
+
+/* CSS SOBRE*/
 
 .sobre{
     border-radius: 10px;

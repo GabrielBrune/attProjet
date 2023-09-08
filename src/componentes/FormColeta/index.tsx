@@ -5,7 +5,7 @@ import Cabecalho from '../cabecalho';
 
 type Props = {
     onAdd: (
-        Img:string,
+        Img: string,
         nome: string,
         cep: string,
         logradouro: string,
@@ -123,128 +123,128 @@ function FormularioColeta({ onAdd }: Props) {
 
 
     return (
-        <div>
+        <div className='telaForm'>
             <div>
-                <Cabecalho />
-            </div>
-            <div>
-                
-                <div className='box-conteiner-form'>
-                    <div className='top'>
-                        <h2>Insira as Informações</h2>
-                    </div>
-                    <div className='box-input'>
-                    <input className='cssForm'
-                        value={Img}
-                        type='text'
-                        placeholder="Digite a URL da entidade"
-                        onChange={handleImgAdd}
-                    />
-                    <input className='cssForm'
-                        value={Nome}
-                        type='text'
-                        placeholder="Digite o nome da entidade"
-                        onChange={handleNomeAdd}
-                    />
-                    <br />
-                    <input className='cssForm'
-                        value={Cep}
-                        type='text'
-                        placeholder="Digite o CEP"
-                        onChange={handleCepAdd}
-                    />
-                    <br />
-                    <input className='cssForm'
-                        value={Logradouro}
-                        type='text'
-                        placeholder="Digite o logradouro"
-                        onChange={handleLogradouroAdd}
-                    />
-                    <br />
-                    <input className='cssForm'
-                        value={Numero}
-                        type='text'
-                        placeholder="Digite o nÚmero"
-                        onChange={handleNumeroAdd}
-                    />
-                    <br />
-                    <input className='cssForm'
-                        value={Complemento}
-                        type='text'
-                        placeholder="Digite o complemento"
-                        onChange={handleCompletoAdd}
-                    />
-                    
-                    <br />
-                    <input className='cssForm'
-                        value={Bairro}
-                        type='text'
-                        placeholder="Digite o bairro"
-                        onChange={handleBairroAdd}
-                    />
+                <div>
+                    <Cabecalho />
+                </div>
+                <div>
+                    <div className='box-conteiner-form'>
+                        <div className='top'>
+                            <h2>Insira as Informações</h2>
+                        </div>
+                        <div className='box-input'>
+                            <input className='cssForm'
+                                value={Img}
+                                type='text'
+                                placeholder="Digite a URL da entidade"
+                                onChange={handleImgAdd}
+                            />
+                            <input className='cssForm'
+                                value={Nome}
+                                type='text'
+                                placeholder="Digite o nome da entidade"
+                                onChange={handleNomeAdd}
+                            />
+                            <br />
+                            <input className='cssForm'
+                                value={Cep}
+                                type='text'
+                                placeholder="Digite o CEP"
+                                onChange={handleCepAdd}
+                            />
+                            <br />
+                            <input className='cssForm'
+                                value={Logradouro}
+                                type='text'
+                                placeholder="Digite o logradouro"
+                                onChange={handleLogradouroAdd}
+                            />
+                            <br />
+                            <input className='cssForm'
+                                value={Numero}
+                                type='text'
+                                placeholder="Digite o número"
+                                onChange={handleNumeroAdd}
+                            />
+                            <br />
+                            <input className='cssForm'
+                                value={Complemento}
+                                type='text'
+                                placeholder="Digite o complemento"
+                                onChange={handleCompletoAdd}
+                            />
 
-                    <br />
-                    <input className='cssForm'
-                        value={Cidade}
-                        type='text'
-                        placeholder="Digite a cidade"
-                        onChange={handleCidadeAdd}
-                    />
+                            <br />
+                            <input className='cssForm'
+                                value={Bairro}
+                                type='text'
+                                placeholder="Digite o bairro"
+                                onChange={handleBairroAdd}
+                            />
 
-                    <br />
-                    <input className='cssForm'
-                        value={Estado}
-                        type='text'
-                        placeholder="Digite o estado"
-                        onChange={handleEstadoAdd}
-                    />
+                            <br />
+                            <input className='cssForm'
+                                value={Cidade}
+                                type='text'
+                                placeholder="Digite a cidade"
+                                onChange={handleCidadeAdd}
+                            />
 
-                    <br />
-                    <input className='cssForm'
-                        value={Telefone}
-                        type='text'
-                        placeholder="Digite o telefone"
-                        onChange={handleTelefoneAdd}
-                    />
+                            <br />
+                            <input className='cssForm'
+                                value={Estado}
+                                type='text'
+                                placeholder="Digite o estado"
+                                onChange={handleEstadoAdd}
+                            />
 
-                    <br />
-                    <input className='cssForm'
-                        value={Email}
-                        type='text'
-                        placeholder="Digite o email"
-                        onChange={handleEmailAdd}
-                    />
+                            <br />
+                            <input className='cssForm'
+                                value={Telefone}
+                                type='text'
+                                placeholder="Digite o telefone"
+                                onChange={handleTelefoneAdd}
+                            />
 
-                   <br />
-                    <input className='cssForm'
-                        placeholder='Data de início'
-                        value={DataInicio}
-                        type='text'
-                        onChange={handleDataInicioAdd}
-                    />
+                            <br />
+                            <input className='cssForm'
+                                value={Email}
+                                type='text'
+                                placeholder="Digite o email"
+                                onChange={handleEmailAdd}
+                            />
 
-                    <br />
-                    <input className='cssForm'
-                        placeholder='Data de término'
-                        value={DataTermino}
-                        type='text'
-                        onChange={handleDataTerminoAdd}
-                    />
+                            <br />
+                            <input className='cssForm'
+                                placeholder='Data de início'
+                                value={DataInicio}
+                                type='text'
+                                onChange={handleDataInicioAdd}
+                            />
 
-                    <br />
-                    <textarea className='cssForm1'
-                        value={Descricao}
-                        placeholder="Digite a descrição"
-                        onChange={handleDescricaoAdd}
-                    />
-                    <br />
+                            <br />
+                            <input className='cssForm'
+                                placeholder='Data de término'
+                                value={DataTermino}
+                                type='text'
+                                onChange={handleDataTerminoAdd}
+                            />
 
-                    <button className='buttonEnter1' onClick={handleAddClick}>Enviar</button>
+                            <br />
+                            <textarea className='cssForm1'
+                                value={Descricao}
+                                placeholder="Digite a descrição"
+                                onChange={handleDescricaoAdd}
+                            />
+                            <br />
+
+                            <button className='buttonEnter1' onClick={handleAddClick}>Enviar</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     );
 }
 
