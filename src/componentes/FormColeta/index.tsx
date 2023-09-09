@@ -123,13 +123,22 @@ function FormularioColeta({ onAdd }: Props) {
 
 
     return (
-        <div className='telaForm'>
+        <div>
             <div>
                 <div>
                     <Cabecalho />
                 </div>
                 <div>
                     <div className='box-conteiner-form'>
+                        <div
+                            style={{
+                                backgroundImage: `url('/Logo_branca.png')`,
+                                backgroundPosition: "center",
+                                backgroundSize: "cover",
+                                backgroundRepeat: "no-repeat",
+                            }}
+                            className="divLogo"
+                        ></div>
                         <div className='top'>
                             <h2>Insira as Informações</h2>
                         </div>

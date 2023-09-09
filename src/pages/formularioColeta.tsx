@@ -60,7 +60,7 @@ function TelaForm() {
     }
 
     return (
-        <div>
+        <div >
             {(!UsuarioAdmLog?.name || UsuarioAdmLog?.name === null || UsuarioAdmLog?.name === undefined) &&
                 <div>
                     <div className="Autorização">
@@ -83,25 +83,29 @@ function TelaForm() {
 
                     </div>
                     <div className='informacoesColeta'>
-                        <h2>Se você deseja que seja cadastrado um ponto de coleta ou doação de vestimentas, roupas, sapatos, etc. Nos encaminhe um email para o endereço ...... com as seguintes informações:</h2>
-                        <h3>Nome da entidade;<br></br></h3>
-                        <h4>A URL de uma imagem da entidade;<br></br></h4> 
-                        <h3>CEP;</h3> 
-                        <h3>Logradouro;</h3> 
-                        <h3>Número do endereço;</h3> 
-                        <h3>Complemento (caso necessário);</h3> 
-                        <h3>Nome da entidade;</h3> 
-                        <h3>Nome da entidade;</h3> 
-                        <h3>Nome da entidade;</h3> 
-                        <h3>Nome da entidade;</h3>    
+                        <h2>Se você deseja que seja cadastrado um ponto de coleta ou doação de vestimentas, roupas, sapatos, etc. Nos encaminhe um email para o endereço aquecame@hotmail.com.br com as seguintes informações:</h2><br></br><br></br>
+                        <p id='fontP'>Nome da entidade;<br></br>
+                        A URL de uma imagem da entidade;<br></br>
+                        CEP;<br></br>
+                        Logradouro;<br></br> 
+                        Número do endereço;<br></br>
+                        Complemento;<br></br> 
+                        Bairro;<br></br> 
+                        Cidade;<br></br> 
+                        Estado;<br></br> 
+                        Telefone;<br></br>
+                        Endereço de email;<br></br>
+                        Data ínicio da coleta/doação;<br></br>
+                        Data término da coleta/doação;<br></br>
+                        Descrição do ponto de coleta/doação.</p>        
                     </div>
                 </div>
             }
 
             {UsuarioAdmLog?.name &&
-                <>
+                <div className='telaForm'>
                     <FormularioColeta onAdd={handleInserir} />
-                </>
+                </div>
             }
         </div>
     );
