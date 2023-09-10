@@ -69,10 +69,10 @@ function PontoColeta({dados} : Props, index:Props){
                                         <td> <b>ENTIDADE:</b> {dados.entidade}</td>
                                     </tr>
                                     <tr>
-                                        <td> DATA DE INÍCIO: {dados.dataInicio}</td>
+                                        <td> <>DATA DE INÍCIO:</> {dados.dataInicio}</td>
                                     </tr>                                                                      
                                     <tr>
-                                        <td>DATA DE TÉRMINO: {dados.dataTermino}</td>
+                                        <td><>DATA DE TÉRMINO:</> {dados.dataTermino}</td>
                                     </tr>                                   
                                 </tbody>
                             </div>
@@ -105,42 +105,37 @@ function PontoColeta({dados} : Props, index:Props){
                         <div className='tabelahome'>
                             <tbody>
                                 <tr>
-                                    <td>Nome: {dados.entidade}</td>
-                                    <td>Cep: {dados.cep}</td>
+                                    <td><b>Nome:</b> {dados.entidade}</td>
+                                    <td><b>Cep:</b> {dados.cep}</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Lougradouro: {dados.logradouro}</td>
-                                    <td>Numero: {dados.numero}</td>
+                                    <td><b>Logradouro:</b> {dados.logradouro}</td>
+                                    <td><b>Número:</b> {dados.numero}</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Complemento: {dados.complemento}</td>
-                                    <td>Bairro: {dados.bairro}</td>
+                                    <td><b>Complemento:</b> {dados.complemento}</td>
+                                    <td><b>Bairro:</b> {dados.bairro}</td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Cidade: {dados.cidade}</td>
-                                    <td>Estado: {dados.estado}</td>
+                                    <td><b>Cidade:</b> {dados.cidade}</td>
+                                    <td><b>Estado:</b> {dados.estado}</td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Data Inicio: {dados.dataInicio}</td>
-                                    <td>Data termino: {dados.dataTermino}</td>
+                                    <td><b>Data Ínicio:</b> {dados.dataInicio}</td>
+                                    <td><b>Data término:</b>{dados.dataTermino}</td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Telefone: {dados.telefone}</td>
-                                    <td>Email: {dados.email}</td>
-                                </tr>
-                                <tr>
-                                    
-                                    
-
+                                    <td><b>Telefone:</b> {dados.telefone}</td>
+                                    <td><b>Email:</b> {dados.email}</td>
                                 </tr>
                             </tbody>
                             <div className='desc'>
-                                        Descrição: {dados.descricao}
+                                <b>Descrição:</b> {dados.descricao}
                                         
                             </div>
                         </div>
@@ -177,10 +172,10 @@ function PontoColeta({dados} : Props, index:Props){
                                         <td><b>ENTIDADE:</b> {dados.entidade}</td>
                                     </tr>
                                     <tr>
-                                        <td> DATA DE INÍCIO: {dados.dataInicio}</td>
+                                        <td><b>DATA DE INÍCIO:</b> {dados.dataInicio}</td>
                                     </tr>                                                                      
                                     <tr>
-                                        <td>DATA DE TÉRMINO: {dados.dataTermino}</td>
+                                        <td><b>DATA DE TÉRMINO:</b> {dados.dataTermino}</td>
                                     </tr>                                   
                                 </tbody>
                             </div>
@@ -206,42 +201,37 @@ function PontoColeta({dados} : Props, index:Props){
                         <div className='tabelahome'>
                             <tbody>
                                 <tr>
-                                    <td>Nome: {dados.entidade}</td>
-                                    <td>Cep: {dados.cep}</td>
+                                    <td><b>Nome:</b> {dados.entidade}</td>
+                                    <td><b>Cep:</b> {dados.cep}</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Lougradouro: {dados.logradouro}</td>
-                                    <td>Numero: {dados.numero}</td>
+                                    <td><b>Logradouro:</b> {dados.logradouro}</td>
+                                    <td><b>Número:</b> {dados.numero}</td>
                                 </tr>
 
                                 <tr>
-                                    <td>Complemento: {dados.complemento}</td>
-                                    <td>Bairro: {dados.bairro}</td>
+                                    <td><b>Complemento:</b> {dados.complemento}</td>
+                                    <td><b>Bairro:</b> {dados.bairro}</td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Cidade: {dados.cidade}</td>
-                                    <td>Estado: {dados.estado}</td>
+                                    <td><b>Cidade:</b> {dados.cidade}</td>
+                                    <td><b>Estado:</b> {dados.estado}</td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Data Inicio: {dados.dataInicio}</td>
-                                    <td>Data termino: {dados.dataTermino}</td>
+                                    <td><b>Data Ínicio:</b> {dados.dataInicio}</td>
+                                    <td><b>Data término:</b>{dados.dataTermino}</td>
                                 </tr>
                                 
                                 <tr>
-                                    <td>Telefone: {dados.telefone}</td>
-                                    <td>Email: {dados.email}</td>
-                                </tr>
-                                <tr>
-                                    
-                                    
-
+                                    <td><b>Telefone:</b> {dados.telefone}</td>
+                                    <td><b>Email:</b> {dados.email}</td>
                                 </tr>
                             </tbody>
                             <div className='desc'>
-                                        Descrição: {dados.descricao}
+                                <b>Descrição:</b> {dados.descricao}
                                         
                             </div>
                         </div>           

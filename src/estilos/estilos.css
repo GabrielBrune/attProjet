@@ -100,7 +100,7 @@ a{
     margin: 20px;
     border: 1px solid;
     border-radius: 10px;
-    background-color: hsl(218, 52%, 65%);
+    background-color: rgb(255, 255, 255, 0.875);
     width: 500px;
     height: 480px;
 }
@@ -156,9 +156,10 @@ a{
 }
 
 .buttom{
-    background-color: rgb(6, 47, 83);
-    border:solid 2px #21496b;
-    color:white;
+    background-color: rgba(195, 199, 202, 0.637);
+    border:solid 2px ;
+    border-radius: 5px;
+    color:rgba(66, 66, 66, 0.781);
 }
 
 
@@ -174,16 +175,18 @@ a{
 }
 
 td,tr{
+    text-align: start;
     margin-top: 10px;
     width: 300px;
     padding: 2px;
-    border-radius: 5px;
-    border: 2px solid;
+    border-radius: 2px;
+    border-bottom: 2px solid;
     border-color: black;
 
 }
 
 .desc{
+    text-align: start;
     margin-top:10px;
     overflow:scroll ; 
     width:500px; 
@@ -193,10 +196,8 @@ td,tr{
 
 .trent{
     margin-top: 100px;
-    background-color: rgb(16, 64, 103);
-    color: white;
-    
-    border-color:  rgb(4, 35, 59);
+    margin-bottom: 80px;
+    background-color: rgba(145, 145, 145, 0.31);
     padding: 10px;
     border-radius: 10px;
     width: 400px;
