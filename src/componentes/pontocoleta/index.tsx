@@ -125,8 +125,8 @@ function PontoColeta({dados} : Props, index:Props){
                                 </tr>
                                 
                                 <tr>
-                                    <td><b>Data Ínicio:</b> {dados.dataInicio}</td>
-                                    <td><b>Data término:</b>{dados.dataTermino}</td>
+                                    <td><b>Data Inicio:</b> {dados.dataInicio}</td>
+                                    <td><b>Data Término:</b>{dados.dataTermino}</td>
                                 </tr>
                                 
                                 <tr>
@@ -221,8 +221,8 @@ function PontoColeta({dados} : Props, index:Props){
                                 </tr>
                                 
                                 <tr>
-                                    <td><b>Data Ínicio:</b> {dados.dataInicio}</td>
-                                    <td><b>Data término:</b>{dados.dataTermino}</td>
+                                    <td><b>Data Inicio:</b> {dados.dataInicio}</td>
+                                    <td><b>Data Término:</b>{dados.dataTermino}</td>
                                 </tr>
                                 
                                 <tr>
