@@ -188,7 +188,7 @@ td,tr{
 .desc{
     text-align: start;
     margin-top:10px;
-    overflow:scroll; 
+    overflow:scroll solid 2px; 
     width:500px; 
     height:90px;
     
