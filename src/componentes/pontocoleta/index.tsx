@@ -28,6 +28,7 @@ function PontoColeta({dados} : Props, index:Props){
         if(dados.id){
             ExcluirPonto(dados)
             carregarPontos()
+            alert("Ponto Excluido!")
         }else{
             carregarPontos()
         }
