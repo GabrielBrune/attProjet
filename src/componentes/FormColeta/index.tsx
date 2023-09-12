@@ -137,7 +137,7 @@ function FormularioColeta({ onAdd }: Props) {
                                 backgroundSize: "cover",
                                 backgroundRepeat: "no-repeat",
                             }}
-                            className="divLogo"
+                            className="divLogo2"
                         ></div>
                         <div className='top'>
                             <h2>Insira as Informações</h2>
@@ -146,7 +146,7 @@ function FormularioColeta({ onAdd }: Props) {
                             <input className='cssForm'
                                 value={Img}
                                 type='text'
-                                placeholder="Digite a URL da entidade"
+                                placeholder="Digite a URL da imagem da entidade"
                                 onChange={handleImgAdd}
                             />
                             <input className='cssForm'

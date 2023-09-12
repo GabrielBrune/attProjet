@@ -69,10 +69,10 @@ function PontoColeta({dados} : Props, index:Props){
                                         <td> <b>ENTIDADE:</b> {dados.entidade}</td>
                                     </tr>
                                     <tr>
-                                        <td> <>DATA DE INÍCIO:</> {dados.dataInicio}</td>
+                                        <td> <b>DATA DE INÍCIO:</b> {dados.dataInicio}</td>
                                     </tr>                                                                      
                                     <tr>
-                                        <td><>DATA DE TÉRMINO:</> {dados.dataTermino}</td>
+                                        <td><b>DATA DE TÉRMINO:</b> {dados.dataTermino}</td>
                                     </tr>                                   
                                 </tbody>
                             </div>
@@ -106,7 +106,7 @@ function PontoColeta({dados} : Props, index:Props){
                             <tbody>
                                 <tr>
                                     <td><b>Nome:</b> {dados.entidade}</td>
-                                    <td><b>Cep:</b> {dados.cep}</td>
+                                    <td><b>CEP:</b> {dados.cep}</td>
                                 </tr>
 
                                 <tr>
@@ -125,7 +125,7 @@ function PontoColeta({dados} : Props, index:Props){
                                 </tr>
                                 
                                 <tr>
-                                    <td><b>Data Inicio:</b> {dados.dataInicio}</td>
+                                    <td><b>Data Início:</b> {dados.dataInicio}</td>
                                     <td><b>Data Término:</b>{dados.dataTermino}</td>
                                 </tr>
                                 
@@ -202,7 +202,7 @@ function PontoColeta({dados} : Props, index:Props){
                             <tbody>
                                 <tr>
                                     <td><b>Nome:</b> {dados.entidade}</td>
-                                    <td><b>Cep:</b> {dados.cep}</td>
+                                    <td><b>CEP:</b> {dados.cep}</td>
                                 </tr>
 
                                 <tr>
@@ -221,7 +221,7 @@ function PontoColeta({dados} : Props, index:Props){
                                 </tr>
                                 
                                 <tr>
-                                    <td><b>Data Inicio:</b> {dados.dataInicio}</td>
+                                    <td><b>Data Início:</b> {dados.dataInicio}</td>
                                     <td><b>Data Término:</b>{dados.dataTermino}</td>
                                 </tr>
                                 

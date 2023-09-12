@@ -57,6 +57,14 @@ a{
 	outline: inherit;
 
 }
+.divLogo2 {
+
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    margin-left:300px;
+    margin-right: 300px;
+}
 .divLogo1 {
     height: 85px;
     width: 85px;
@@ -156,10 +164,12 @@ a{
 }
 
 .buttom{
-    background-color: rgba(195, 199, 202, 0.637);
-    border:solid 2px ;
+    background-color: rgba(6,47,83);
+    margin: 1px;
+    padding: 5px;
+    border:solid 1px black ;
     border-radius: 5px;
-    color:rgba(66, 66, 66, 0.781);
+    color:#ffffff;
 }
 
 
@@ -187,18 +197,16 @@ td,tr{
 
 .desc{
     text-align: start;
-    margin-top:10px;
     overflow:scroll solid 2px; 
     width:500px; 
-    height:90px;
+    height:70px;
     
 }
 
 .trent{
     margin-top: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     background-color: rgba(145, 145, 145, 0.31);
-    padding: 10px;
     border-radius: 10px;
     width: 400px;
     
@@ -357,7 +365,7 @@ td,tr{
     margin-right:auto ;
     padding-top: 50px;
     width:800px;
-    height: 1200px;
+    height: 1350px;
     box-sizing: border-box;
 }
 .datainicioForm{
@@ -418,7 +426,8 @@ td,tr{
 }
 
 .top{
-    margin-top: 15px;
+
+    margin-bottom: 20px;
     margin-right:auto;
     margin-left:auto;
 
