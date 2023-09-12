@@ -184,6 +184,17 @@ a{
     
 }
 
+.td,.tr{
+    text-align: center;
+    margin-top: 10px;
+    width: 300px;
+    padding: 2px;
+    border-radius: 2px;
+    border-bottom: 2px solid;
+    border-color: black;
+
+}
+
 td,tr{
     text-align: start;
     margin-top: 10px;

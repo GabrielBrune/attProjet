@@ -65,14 +65,14 @@ function PontoColeta({dados} : Props, index:Props){
                             <div className='trent'>
 
                                 <tbody>
-                                    <tr>
-                                        <td> <b>ENTIDADE:</b> {dados.entidade}</td>
+                                    <tr className='tr'>
+                                        <td className='td'> <b>ENTIDADE:</b> {dados.entidade}</td>
                                     </tr>
-                                    <tr>
-                                        <td> <b>DATA DE INÍCIO:</b> {dados.dataInicio}</td>
+                                    <tr className='tr'>
+                                        <td className='td'> <b>DATA DE INÍCIO:</b> {dados.dataInicio}</td>
                                     </tr>                                                                      
-                                    <tr>
-                                        <td><b>DATA DE TÉRMINO:</b> {dados.dataTermino}</td>
+                                    <tr className='tr'>
+                                        <td className='td'><b>DATA DE TÉRMINO:</b> {dados.dataTermino}</td>
                                     </tr>                                   
                                 </tbody>
                             </div>
@@ -168,14 +168,14 @@ function PontoColeta({dados} : Props, index:Props){
                             </div>
                             <div className='trent'>
                                 <tbody>
-                                    <tr>
-                                        <td><b>ENTIDADE:</b> {dados.entidade}</td>
+                                    <tr className='tr'>
+                                        <td className='td'><b>ENTIDADE:</b> {dados.entidade}</td>
                                     </tr>
-                                    <tr>
-                                        <td><b>DATA DE INÍCIO:</b> {dados.dataInicio}</td>
+                                    <tr className='tr'>
+                                        <td className='td'><b>DATA DE INÍCIO:</b> {dados.dataInicio}</td>
                                     </tr>                                                                      
-                                    <tr>
-                                        <td><b>DATA DE TÉRMINO:</b> {dados.dataTermino}</td>
+                                    <tr className='tr'>
+                                        <td className='td'><b>DATA DE TÉRMINO:</b> {dados.dataTermino}</td>
                                     </tr>                                   
                                 </tbody>
                             </div>
